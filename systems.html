@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Forge GTM — Systems We Build</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .forge-container { max-width: 1120px; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-50 antialiased">
+  <div class="min-h-screen flex flex-col">
+    <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
+            FORGE <span class="text-amber-400">GTM</span>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="index.html" class="text-slate-300 hover:text-amber-300 transition-colors">Home</a>
+          <a href="method.html" class="text-slate-300 hover:text-amber-300 transition-colors">Method</a>
+          <a href="systems.html" class="text-amber-300 font-semibold hover:text-amber-300 transition-colors">Systems</a>
+          <a href="about.html" class="text-slate-300 hover:text-amber-300 transition-colors">About Don</a>
+          <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300 transition-colors">Work With Us</a>
+        </nav>
+        <div class="hidden md:flex">
+          <a
+            href="work-with-us.html"
+            class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-amber-500/25 hover:bg-amber-300 transition-colors"
+          >
+            Book a working session
+          </a>
+        </div>
+        <button
+          type="button"
+          class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800 hover:text-white"
+          aria-label="Open main menu"
+          onclick="document.getElementById('mobile-nav').classList.toggle('hidden')"
+        >
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
+        <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-2 text-sm font-medium text-slate-200">
+          <a href="index.html" class="py-1">Home</a>
+          <a href="method.html" class="py-1">Method</a>
+          <a href="systems.html" class="py-1">Systems</a>
+          <a href="about.html" class="py-1">About Don</a>
+          <a href="work-with-us.html" class="py-1">Work With Us</a>
+          <a
+            href="work-with-us.html"
+            class="mt-2 inline-flex items-center justify-center rounded-full bg-amber-400 px-4 py-2 text-xs font-semibold text-slate-950"
+          >
+            Book a working session
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="flex-1">
+      <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <p class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300">Systems We Build</p>
+          <h1 class="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-50">
+            Three systems — one GTM engine your team can actually run.
+          </h1>
+          <p class="mt-4 max-w-2xl text-sm text-slate-300">
+            Forge GTM doesn’t sell “playbooks”. We build a limited set of tightly integrated systems that connect research,
+            narrative, outbound, and leadership into one operating model.
+          </p>
+        </div>
+      </section>
+      <section class="border-b border-slate-800 bg-slate-950">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-12 sm:py-16 grid gap-8 lg:grid-cols-3 text-sm">
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 flex flex-col">
+            <h2 class="text-lg font-semibold text-slate-50">RSO Engine</h2>
+            <p class="mt-3 text-xs text-slate-300">
+              Account-specific RSOs, evidence ledgers, and narratives that connect value to the realities of operators, finance,
+              and leadership — not just a generic deck.
+            </p>
+            <ul class="mt-3 space-y-1.5 text-[11px] text-slate-400">
+              <li>• Diagnostic inputs from Module 1 baked in</li>
+              <li>• Heavy RSOs for top accounts, lighter for scale</li>
+              <li>• Consistent structure for emails, DMs, and meetings</li>
+              <li>• Ready to drop into board or exec reviews</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 flex flex-col">
+            <h2 class="text-lg font-semibold text-slate-50">Outbound &amp; Penetration Engine</h2>
+            <p class="mt-3 text-xs text-slate-300">
+              Outbound that respects the account and reaches real decision-makers — even when email data is weak,
+              fragmented, or non-existent.
+            </p>
+            <ul class="mt-3 space-y-1.5 text-[11px] text-slate-400">
+              <li>• Outreach-ready segments with named humans</li>
+              <li>• Penetration plans when we don’t have email</li>
+              <li>• “Like–Know–Trust” paths mapped for each lane</li>
+              <li>• Clear ownership between founders, AEs, SDRs</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 flex flex-col">
+            <h2 class="text-lg font-semibold text-slate-50">GTM Command &amp; Leadership Layer</h2>
+            <p class="mt-3 text-xs text-slate-300">
+              Leadership views, decision rules, and rhythms so you see reality early — and avoid the usual cycle of “great quarter,
+              then collapse.”
+            </p>
+            <ul class="mt-3 space-y-1.5 text-[11px] text-slate-400">
+              <li>• Operational breakpoint maps and risk dashboards</li>
+              <li>• Metrics hierarchy that actually changes behavior</li>
+              <li>• Scale-collapse scenario modeling and guardrails</li>
+              <li>• Runbooks for 1:1s, forecast, and pipeline reviews</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
+        <div>&copy; <span id="year"></span> FORGE GTM. All rights reserved.</div>
+        <div class="flex flex-wrap gap-3">
+          <span>GTM Architecture &amp; RSO Engine Consultancy.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
