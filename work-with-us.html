@@ -16,22 +16,27 @@
   <title>Forge GTM — Work With Us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     .forge-container { max-width: 1120px; }
-    html { overflow-y: scroll; } /* lock width across pages */
+    html { overflow-y: scroll; }
   </style>
 </head>
+
 <body class="bg-slate-950 text-slate-50 antialiased">
   <div class="min-h-screen flex flex-col">
 
     <!-- MASTER HEADER (locked) -->
     <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
       <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center">
+        <!-- Left -->
         <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
           <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
             FORGE <span class="text-amber-400">GTM</span>
           </div>
         </a>
+
+        <!-- Center Nav -->
         <nav class="hidden md:flex flex-1 items-center justify-center gap-7 text-sm font-medium">
           <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
           <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
@@ -39,6 +44,8 @@
           <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
           <a href="work-with-us.html" class="text-amber-400 font-semibold">Work With Us</a>
         </nav>
+
+        <!-- Right CTA -->
         <div class="hidden md:flex min-w-[180px] justify-end">
           <a href="work-with-us.html"
              class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
@@ -48,8 +55,10 @@
       </div>
     </header>
 
-    <!-- ORIGINAL PAGE CONTENT -->
+    <!-- PAGE CONTENT -->
     <main class="flex-1">
+
+      <!-- HERO -->
       <section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800 py-20 sm:py-24">
         <div class="mx-auto forge-container px-4">
           <p class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-300">WORK WITH US</p>
@@ -63,8 +72,11 @@
         </div>
       </section>
 
+      <!-- BODY -->
       <section class="bg-slate-950 py-16">
         <div class="mx-auto forge-container px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+          <!-- LEFT -->
           <div>
             <p class="text-[11px] font-semibold tracking-widest text-amber-300 uppercase mb-2">What we cover</p>
             <ul class="text-sm text-slate-300 space-y-1">
@@ -77,18 +89,30 @@
             <div class="mt-8 text-sm space-y-2">
               <p><span class="text-slate-400">Email:</span> <a class="underline" href="mailto:donggie@gmail.com">donggie@gmail.com</a></p>
               <p><span class="text-slate-400">LinkedIn:</span> <a class="underline" href="https://www.linkedin.com/in/donflorencio" target="_blank" rel="noopener">Connect with Don</a></p>
-              <p><span class="text-slate-400">Calendar:</span> <a class="underline" href="https://calendar.app.google/qgduKzb4thiCxL6Y7" target="_blank" rel="noopener">Grab a 30–60 minute slot</a></p>
+              <p><span class="text-slate-400">Calendar:</span> <a class="underline" href="https://calendly.com/donggie/30min" target="_blank" rel="noopener">Grab a 30–60 minute slot</a></p>
             </div>
           </div>
 
+          <!-- RIGHT SIDE — FIXED CALENDLY -->
           <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-0 overflow-hidden">
-            <!-- Calendly Embed (example iframe; keep your live embed if different) -->
-            <iframe src="https://calendly.com/embed" class="w-full" style="height: 720px;" loading="lazy"></iframe>
+
+            <!-- INLINE CALENDLY (THE ONE THAT WAS WORKING BEFORE) -->
+            <div
+              class="calendly-inline-widget"
+              data-url="https://calendly.com/donggie/30min"
+              style="min-width: 320px; height: 700px;">
+            </div>
+
+            <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
           </div>
+
         </div>
       </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer class="border-t border-slate-800 bg-slate-950">
       <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
         © <span id="year"></span> FORGE GTM. All rights reserved.
@@ -99,5 +123,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
