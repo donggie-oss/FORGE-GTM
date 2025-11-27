@@ -16,11 +16,32 @@
   <title>Forge GTM — About Don</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     .forge-container { max-width: 1120px; }
     html { overflow-y: scroll; } /* lock width across pages */
+
+    /* Fix rendering artifacts (fake tooth gap) on Don's profile image */
+    .about-photo {
+        image-rendering: auto !important;
+        filter: none !important;
+        -webkit-filter: none !important;
+        mask-image: none !important;
+        -webkit-mask-image: none !important;
+        background: none !important;
+        backdrop-filter: none !important;
+        border-radius: 9999px !important;
+    }
+
+    /* Prevent parent or container filters from affecting the image */
+    .about-photo,
+    .about-photo * {
+        filter: none !important;
+        -webkit-filter: none !important;
+    }
   </style>
 </head>
+
 <body class="bg-slate-950 text-slate-50 antialiased">
   <div class="min-h-screen flex flex-col">
 
@@ -52,6 +73,7 @@
     <main class="flex-1">
       <section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800 py-20 sm:py-24">
         <div class="mx-auto forge-container px-4 grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+          
           <div class="md:col-span-2">
             <p class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-300">ABOUT DON</p>
             <h1 class="mt-6 text-4xl sm:text-5xl font-bold leading-tight">
@@ -72,20 +94,23 @@
               and sleeves-rolled-up execution — not just another slide deck.
             </p>
           </div>
+
           <div class="md:col-span-1">
             <div class="flex flex-col items-center">
-              <img src="assets/headshot.jpg" alt="Don Florencio" class="h-48 w-48 rounded-full object-cover mb-4">
+              <img src="assets/headshot.jpg" alt="Don Florencio" class="about-photo h-48 w-48 rounded-full object-cover mb-4">
               <div class="text-center">
                 <p class="font-semibold">Don Florencio</p>
                 <p class="text-xs text-slate-400">GTM Architecture & Outbound Systems</p>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
       <section class="bg-slate-950 py-16">
         <div class="mx-auto forge-container px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+          
           <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-6">
             <p class="text-[11px] font-semibold tracking-widest text-amber-300 uppercase mb-2">Background at a glance</p>
             <ul class="text-sm text-slate-300 space-y-1">
@@ -95,6 +120,7 @@
               <li>• Strong bias toward documentation, discipline, and survivable systems.</li>
             </ul>
           </div>
+
           <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-6">
             <p class="text-[11px] font-semibold tracking-widest text-amber-300 uppercase mb-2">How Don works with teams</p>
             <ul class="text-sm text-slate-300 space-y-1">
@@ -104,6 +130,7 @@
               <li>• Leaves behind systems, not dependency on him personally.</li>
             </ul>
           </div>
+
         </div>
       </section>
     </main>
@@ -113,10 +140,12 @@
         © <span id="year"></span> FORGE GTM. All rights reserved.
       </div>
     </footer>
+
   </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
