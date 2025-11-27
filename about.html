@@ -19,33 +19,26 @@
 
   <style>
     .forge-container { max-width: 1120px; }
-    html { overflow-y: scroll; } /* lock width across pages */
+    html { overflow-y: scroll; }
 
-    /* Fix rendering artifacts (fake tooth gap) on Don's profile image */
+    /* Final fix for Chrome/Edge/Brave rendering artifact on circular images */
     .about-photo {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        clip-path: circle(50%) !important; /* PERFECT circle with zero sharpening */
+        -webkit-clip-path: circle(50%) !important;
         image-rendering: auto !important;
-        filter: none !important;
-        -webkit-filter: none !important;
-        mask-image: none !important;
-        -webkit-mask-image: none !important;
-        background: none !important;
-        backdrop-filter: none !important;
-        border-radius: 9999px !important;
-    }
-
-    /* Prevent parent or container filters from affecting the image */
-    .about-photo,
-    .about-photo * {
         filter: none !important;
         -webkit-filter: none !important;
     }
   </style>
-</head>
 
+</head>
 <body class="bg-slate-950 text-slate-50 antialiased">
   <div class="min-h-screen flex flex-col">
 
-    <!-- MASTER HEADER (locked) -->
+    <!-- MASTER HEADER -->
     <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
       <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center">
         <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
@@ -53,6 +46,7 @@
             FORGE <span class="text-amber-400">GTM</span>
           </div>
         </a>
+
         <nav class="hidden md:flex flex-1 items-center justify-center gap-7 text-sm font-medium">
           <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
           <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
@@ -60,6 +54,7 @@
           <a href="about.html" class="text-amber-400 font-semibold">About Don</a>
           <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
         </nav>
+
         <div class="hidden md:flex min-w-[180px] justify-end">
           <a href="work-with-us.html"
              class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
@@ -69,39 +64,53 @@
       </div>
     </header>
 
-    <!-- ORIGINAL PAGE CONTENT -->
+    <!-- PAGE CONTENT -->
     <main class="flex-1">
       <section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800 py-20 sm:py-24">
         <div class="mx-auto forge-container px-4 grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
-          
+
+          <!-- LEFT CONTENT -->
           <div class="md:col-span-2">
             <p class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-300">ABOUT DON</p>
+
             <h1 class="mt-6 text-4xl sm:text-5xl font-bold leading-tight">
               30+ years of turning stalled territories into disciplined GTM engines.
             </h1>
+
             <p class="mt-6 text-sm sm:text-base text-slate-300 max-w-2xl">
               Don Florencio has led GTM, enterprise sales, and commercial teams across the US and APAC —
               from high-volume Long Island territories to SaaS and ERP plays in Australia, Singapore, and the
               Philippines.
             </p>
+
             <p class="mt-4 text-sm sm:text-base text-slate-300 max-w-2xl">
               His work focuses on outbound architecture, territory turnarounds, and building GTM systems
               that survive real-world constraints: impatient boards, thin margins, and teams who don’t have
               the luxury of perfect conditions.
             </p>
+
             <p class="mt-4 text-sm sm:text-base text-slate-300 max-w-2xl">
               Forge GTM is how he now works with founder-led and mid-market teams who need both strategy
               and sleeves-rolled-up execution — not just another slide deck.
             </p>
           </div>
 
+          <!-- RIGHT SIDEBAR WITH FIXED PHOTO -->
           <div class="md:col-span-1">
             <div class="flex flex-col items-center">
-              <img src="assets/headshot.jpg" alt="Don Florencio" class="about-photo h-48 w-48 rounded-full object-cover mb-4">
+              
+              <!-- FIXED IMAGE WRAPPER -->
+              <div class="h-48 w-48 mb-4">
+                <img src="assets/headshot.jpg"
+                     alt="Don Florencio"
+                     class="about-photo">
+              </div>
+
               <div class="text-center">
                 <p class="font-semibold">Don Florencio</p>
                 <p class="text-xs text-slate-400">GTM Architecture & Outbound Systems</p>
               </div>
+
             </div>
           </div>
 
@@ -110,7 +119,7 @@
 
       <section class="bg-slate-950 py-16">
         <div class="mx-auto forge-container px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-          
+
           <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-6">
             <p class="text-[11px] font-semibold tracking-widest text-amber-300 uppercase mb-2">Background at a glance</p>
             <ul class="text-sm text-slate-300 space-y-1">
@@ -149,3 +158,4 @@
 
 </body>
 </html>
+
