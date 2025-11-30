@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
   <base href="/FORGE-GTM/">
-
-  <!-- FAVICONS (both bundles) -->
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
@@ -15,39 +13,35 @@
   <meta charset="utf-8" />
   <title>Forge GTM — About Don</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- SEO / Social -->
+  <meta name="description" content="Don Florencio builds disciplined GTM and outbound systems that survive real-world constraints across US and APAC.">
+  <meta property="og:title" content="Forge GTM — About Don">
+  <meta property="og:description" content="30+ years of turning stalled territories into disciplined GTM engines.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://donggie-oss.github.io/FORGE-GTM/about.html">
+  <meta property="og:image" content="https://donggie-oss.github.io/FORGE-GTM/assets/forge-share.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .forge-container { max-width: 1120px; }
     html { overflow-y: scroll; }
-
-    /* Final fix for Chrome/Edge/Brave rendering artifact on circular images */
-    .about-photo {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
-        clip-path: circle(50%) !important; /* PERFECT circle with zero sharpening */
-        -webkit-clip-path: circle(50%) !important;
-        image-rendering: auto !important;
-        filter: none !important;
-        -webkit-filter: none !important;
-    }
   </style>
-
 </head>
+
 <body class="bg-slate-950 text-slate-50 antialiased">
   <div class="min-h-screen flex flex-col">
 
-    <!-- MASTER HEADER -->
+    <!-- HEADER -->
     <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
-      <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
         <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
           <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
             FORGE <span class="text-amber-400">GTM</span>
           </div>
         </a>
 
-        <nav class="hidden md:flex flex-1 items-center justify-center gap-7 text-sm font-medium">
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
           <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
           <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
           <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
@@ -61,101 +55,102 @@
             Book a working session
           </a>
         </div>
+
+        <!-- MOBILE MENU -->
+        <button type="button"
+          class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
+          aria-controls="mobile-nav" aria-expanded="false"
+          onclick="const m=document.getElementById('mobile-nav'); const btn=this; m.classList.toggle('hidden'); btn.setAttribute('aria-expanded', m.classList.contains('hidden') ? 'false' : 'true');">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
+        <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
+          <a href="index.html">Home</a>
+          <a href="method.html">Method</a>
+          <a href="systems.html">Systems</a>
+          <a href="about.html" class="text-amber-400 font-semibold">About Don</a>
+          <a href="work-with-us.html">Work With Us</a>
+        </nav>
       </div>
     </header>
 
-    <!-- PAGE CONTENT -->
+    <!-- MAIN CONTENT -->
     <main class="flex-1">
-      <section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800 py-20 sm:py-24">
-        <div class="mx-auto forge-container px-4 grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
-
-          <!-- LEFT CONTENT -->
-          <div class="md:col-span-2">
-            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-300">ABOUT DON</p>
-
-            <h1 class="mt-6 text-4xl sm:text-5xl font-bold leading-tight">
+      <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-12 sm:py-16 grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-start">
+          <div>
+            <p class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300">About Don</p>
+            <h1 class="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-50">
               30+ years of turning stalled territories into disciplined GTM engines.
             </h1>
-
-            <p class="mt-6 text-sm sm:text-base text-slate-300 max-w-2xl">
-              Don Florencio has led GTM, enterprise sales, and commercial teams across the US and APAC —
-              from high-volume Long Island territories to SaaS and ERP plays in Australia, Singapore, and the
-              Philippines.
+            <p class="mt-4 text-sm text-slate-300">
+              Don Florencio has led GTM, enterprise sales, and commercial teams across the US and APAC — from high-volume
+              Long Island territories to SaaS and ERP plays in Australia, Singapore, and the Philippines.
             </p>
-
-            <p class="mt-4 text-sm sm:text-base text-slate-300 max-w-2xl">
-              His work focuses on outbound architecture, territory turnarounds, and building GTM systems
-              that survive real-world constraints: impatient boards, thin margins, and teams who don’t have
-              the luxury of perfect conditions.
+            <p class="mt-3 text-sm text-slate-300">
+              His work focuses on outbound architecture, territory turnarounds, and building GTM systems that survive real-world
+              constraints: impatient boards, thin margins, and teams who don’t have the luxury of perfect conditions.
             </p>
-
-            <p class="mt-4 text-sm sm:text-base text-slate-300 max-w-2xl">
-              Forge GTM is how he now works with founder-led and mid-market teams who need both strategy
-              and sleeves-rolled-up execution — not just another slide deck.
+            <p class="mt-3 text-sm text-slate-300">
+              Forge GTM is how he now works with founder-led and mid-market teams who need both strategy and sleeves-rolled-up
+              execution — not just another slide deck.
             </p>
           </div>
-
-          <!-- RIGHT SIDEBAR WITH FIXED PHOTO -->
-          <div class="md:col-span-1">
-            <div class="flex flex-col items-center">
-              
-              <!-- FIXED IMAGE WRAPPER -->
-              <div class="h-48 w-48 mb-4">
-                <img src="assets/headshot.jpg"
-                     alt="Don Florencio"
-                     class="about-photo">
-              </div>
-
-              <div class="text-center">
-                <p class="font-semibold">Don Florencio</p>
-                <p class="text-xs text-slate-400">GTM Architecture & Outbound Systems</p>
-              </div>
-
+          <div class="flex flex-col items-center">
+            <div class="h-40 w-40 rounded-full overflow-hidden border border-slate-700 shadow-xl shadow-black/40 bg-slate-900 mb-4">
+              <img src="assets/headshot.jpg" alt="Don Florencio" class="h-full w-full object-cover" />
+            </div>
+            <div class="text-center text-xs text-slate-300">
+              <div class="font-semibold text-slate-50">Don Florencio</div>
+              <div>GTM Architecture &amp; Outbound Systems</div>
             </div>
           </div>
-
         </div>
       </section>
 
-      <section class="bg-slate-950 py-16">
-        <div class="mx-auto forge-container px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-6">
-            <p class="text-[11px] font-semibold tracking-widest text-amber-300 uppercase mb-2">Background at a glance</p>
-            <ul class="text-sm text-slate-300 space-y-1">
-              <li>• Head of GTM & enterprise sales roles across ERP, SaaS, and fintech.</li>
+      <section class="bg-slate-950">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-12 sm:py-16 grid gap-8 md:grid-cols-2 text-sm">
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+            <p class="text-xs font-semibold tracking-[0.22em] uppercase text-slate-400 mb-2">Background at a glance</p>
+            <ul class="space-y-1.5 text-[0.8rem] text-slate-300">
+              <li>• Head of GTM &amp; enterprise sales roles across ERP, SaaS, and fintech.</li>
               <li>• Built and rebuilt outbound teams in AU, SG, and PH mid-market.</li>
               <li>• Known for BOT: Build, Operate, Transfer — not “advise and disappear.”</li>
               <li>• Strong bias toward documentation, discipline, and survivable systems.</li>
             </ul>
           </div>
-
-          <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-6">
-            <p class="text-[11px] font-semibold tracking-widest text-amber-300 uppercase mb-2">How Don works with teams</p>
-            <ul class="text-sm text-slate-300 space-y-1">
-              <li>• Starts from your current reality — not an idealized model.</li>
-              <li>• Builds GTM systems with your team, not around them.</li>
-              <li>• Uses real accounts and real pressure to test every motion.</li>
-              <li>• Leaves behind systems, not dependency on him personally.</li>
-            </ul>
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 flex flex-col justify-between">
+            <div>
+              <p class="text-xs font-semibold tracking-[0.22em] uppercase text-slate-400 mb-2">How Don works with teams</p>
+              <ul class="space-y-1.5 text-[0.8rem] text-slate-300">
+                <li>• Starts from your current reality — not an idealized model.</li>
+                <li>• Builds GTM systems with your team, not around them.</li>
+                <li>• Uses real accounts and real pressure to test every motion.</li>
+                <li>• Leaves behind systems, not dependency on him personally.</li>
+              </ul>
+            </div>
+            <p class="mt-4 text-[0.75rem] text-slate-400">
+              “The point isn’t a perfect quarter — it’s a GTM engine your team can still run two years from now when the market shifts.”
+            </p>
           </div>
-
         </div>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="border-t border-slate-800 bg-slate-950">
       <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
         © <span id="year"></span> FORGE GTM. All rights reserved.
       </div>
     </footer>
-
   </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
-
