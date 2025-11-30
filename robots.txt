@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://donggie-oss.github.io/FORGE-GTM/sitemap.xml
