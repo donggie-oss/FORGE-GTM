@@ -1,106 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work With Us – FORGE GTM</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <base href="/FORGE-GTM/">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="forge-favicon-48.png">
+  <link rel="apple-touch-icon" href="forge-favicon-180.png">
+
+  <meta charset="utf-8" />
+  <title>Forge GTM — Work With Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Book a working session to pressure-test your lanes and design a durable GTM engine for the next 4–8 quarters.">
+  <meta property="og:title" content="Forge GTM — Work With Us">
+  <meta property="og:description" content="If your GTM has to work in the real world, let’s talk.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://donggie-oss.github.io/FORGE-GTM/work-with-us.html">
+  <meta property="og:image" content="https://donggie-oss.github.io/FORGE-GTM/assets/forge-share.png">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+  <meta name="theme-color" content="#0f172a">
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
-    body { background-color: #0a0a14; color: #d1d1d1; }
-    .forge-container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+    .forge-container { max-width: 1120px; }
+    html { overflow-y: scroll; }
+    .skip-link {
+      position:absolute; left:-10000px; top:auto;
+      width:1px; height:1px; overflow:hidden;
+    }
+    .skip-link:focus {
+      position:static; width:auto; height:auto;
+      padding:0.5rem 0.75rem; background:#fbbf24;
+      color:#0f172a; border-radius:9999px;
+    }
   </style>
 </head>
 
-<body>
+<body class="bg-slate-950 text-slate-50 antialiased">
 
-<!-- NAVIGATION (UNCHANGED) -->
-<header class="w-full py-6 bg-[#0a0a14] border-b border-[#1e1e29]">
-  <div class="forge-container flex justify-between items-center">
-      <div class="text-2xl font-bold text-white">FORGE <span class="text-amber-400">GTM</span></div>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="min-h-screen flex flex-col">
 
-      <nav class="space-x-10 text-gray-300">
-          <a href="index.html" class="hover:text-white">Home</a>
-          <a href="method.html" class="hover:text-white">Method</a>
-          <a href="systems.html" class="hover:text-white">Systems</a>
-          <a href="about.html" class="hover:text-white">About Don</a>
-          <a href="work-with-us.html" class="text-amber-400">Work With Us</a>
-      </nav>
+    <!-- ========================= -->
+    <!-- HEADER (UNCHANGED)        -->
+    <!-- ========================= -->
+    <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 min-w-[140px]" aria-label="Forge GTM — Home">
+          <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
+            FORGE <span class="text-amber-400">GTM</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
+          <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
+          <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
+          <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
+          <a href="work-with-us.html" class="text-amber-400 font-semibold">Work With Us</a>
+        </nav>
+
+        <div class="hidden md:flex min-w-[180px] justify-end">
+          <a href="work-with-us.html"
+             class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
+            Book a working session
+          </a>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <button type="button"
+          class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
+          onclick="
+            const m=document.getElementById('mobile-nav');
+            const btn=this;
+            m.classList.toggle('hidden');
+            btn.setAttribute('aria-expanded', m.classList.contains('hidden') ? 'false' : 'true');
+          ">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
+        <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
+          <a href="index.html">Home</a>
+          <a href="method.html">Method</a>
+          <a href="systems.html">Systems</a>
+          <a href="about.html">About Don</a>
+          <a href="work-with-us.html" class="text-amber-400 font-semibold">Work With Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========================= -->
+    <!-- HERO (UNCHANGED)          -->
+    <!-- ========================= -->
+    <main id="main" class="flex-1">
+      <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <p class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300">Work With Us</p>
+          <h1 class="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">
+            If your GTM has to work in the real world, let’s talk.
+          </h1>
+          <p class="mt-4 max-w-2xl text-sm text-slate-300">
+            This isn’t a discovery demo — it’s a working session focused on your world, your lanes,
+            and what a durable GTM engine would look like for your next 4–8 quarters.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========================= -->
+      <!-- MAIN CONTENT (LEFT + RIGHT) -->
+      <!-- ========================= -->
+      <section class="bg-slate-950">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-12 sm:py-16 grid gap-8 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
+
+          <!-- LEFT SIDE (UNCHANGED) -->
+          <div>
+            <h2 class="text-sm font-semibold tracking-[0.18em] uppercase text-amber-300">What we cover</h2>
+            <ul class="mt-3 space-y-1.5 text-sm text-slate-200">
+              <li>• Your GTM lanes, exposures, and pressure points</li>
+              <li>• Where pipeline is created, delayed, or quietly dying</li>
+              <li>• How the RSO engine plugs into your reality</li>
+              <li>• Options: Diagnostic, RSO Engine, or BOT engagement</li>
+            </ul>
+            <p class="mt-4 text-xs text-slate-400">
+              You leave with a clear picture of strengths, exposures, and practical next steps —
+              whether or not we work together.
+            </p>
+          </div>
+
+          <!-- ========================= -->
+          <!-- RIGHT SIDE (FIXED + FINAL) -->
+          <!-- ========================= -->
+          <div class="rounded-2xl border border-amber-500/40 bg-slate-950/80 p-6 text-sm">
+
+            <!-- CONTACT BLOCK -->
+            <h3 class="text-sm font-semibold text-slate-100">Book a working session</h3>
+            <p class="mt-2 text-xs text-slate-300">Use the contact options below or book directly via the embedded calendar.</p>
+
+            <div class="mt-4 space-y-2 text-xs text-slate-200">
+              <div>
+                <span class="font-semibold text-slate-50">Email:</span>
+                <a href="mailto:donggie@gmail.com"
+                  class="ml-1 underline decoration-amber-400/70 underline-offset-2 hover:text-amber-300">
+                  donggie@gmail.com
+                </a>
+              </div>
+
+              <div>
+                <span class="font-semibold text-slate-50">LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/don-florencio/"
+                   class="ml-1 underline decoration-amber-400/70 underline-offset-2 hover:text-amber-300"
+                   target="_blank" rel="noopener">
+                  Connect with Don
+                </a>
+              </div>
+
+              <div>
+                <span class="font-semibold text-slate-50">Calendar:</span>
+                <a href="https://calendly.com/donggie/30min"
+                   class="ml-1 underline decoration-amber-400/70 underline-offset-2 hover:text-amber-300"
+                   target="_blank" rel="noopener">
+                  Grab a 30–60 minute slot
+                </a>
+              </div>
+            </div>
+
+            <!-- CLEAN DIVIDER -->
+            <hr class="border-slate-700 mt-6 mb-6">
+
+            <!-- CALENDLY INLINE WIDGET (CORRECT + FIXED) -->
+            <div class="rounded-xl border border-[#2a2a35] overflow-hidden">
+              <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/donggie/30min?hide_gdpr_banner=1&background_color=0a0a14&text_color=ffffff&primary_color=f5b237"
+                style="min-width:320px;height:680px;">
+              </div>
+            </div>
+
+            <!-- CTA BUTTON (UNCHANGED) -->
+            <a href="https://calendly.com/donggie/30min" target="_blank" rel="noopener"
+               class="mt-6 w-full inline-flex items-center justify-center rounded-full bg-amber-400 px-4 py-2.5 text-sm font-semibold text-slate-950 shadow-md hover:bg-amber-300 transition-colors">
+              Request a working session
+            </a>
+
+            <p class="mt-4 text-[11px] text-slate-500 leading-relaxed">
+              No funnel tricks. No “qualification call.” Just a real working session to determine
+              whether a Forge GTM engine would materially improve your next quarters.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================= -->
+    <!-- FOOTER (UNCHANGED)        -->
+    <!-- ========================= -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
+        © <span id="year"></span> FORGE GTM. All rights reserved.
+      </div>
+    </footer>
+
   </div>
-</header>
 
-<!-- HERO SECTION (UNCHANGED) -->
-<section class="py-20 bg-gradient-to-b from-[#0a0a14] to-[#0f0f1a] text-center">
-    <h1 class="text-4xl font-bold text-white mb-4">If your GTM has to work in the real world, let’s talk.</h1>
-    <p class="text-gray-300 max-w-2xl mx-auto">
-        This isn’t a discovery demo — it’s a working session focused on your world, your lanes, and what a durable
-        GTM engine would look like for your next 4–8 quarters.
-    </p>
-</section>
+  <!-- CALENDLY SCRIPT (REQUIRED ONCE ONLY) -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
-<!-- MAIN CONTENT -->
-<div class="forge-container grid grid-cols-1 lg:grid-cols-2 gap-12">
-
-    <!-- LEFT SIDE (UNCHANGED CONTENT) -->
-    <div>
-        <h2 class="text-xl font-semibold text-white mb-6">What We Cover</h2>
-
-        <ul class="space-y-4 text-gray-300 leading-relaxed">
-            <li>• Your GTM lanes, exposures, and pressure points</li>
-            <li>• Where pipeline is created, delayed, or quietly dying</li>
-            <li>• How the RSO engine plugs into your reality</li>
-            <li>• Options: Diagnostic, RSO Engine, or BOT engagement</li>
-        </ul>
-
-        <p class="mt-6 text-sm text-gray-400">
-            You leave with a clear picture of strengths, exposures, and practical next steps — whether or not we work together.
-        </p>
-    </div>
-
-    <!-- RIGHT SIDE — VISUALLY BALANCED, PREMIUM LAYOUT -->
-    <div class="bg-[#0f0f1a] border border-[#1f1f2d] rounded-2xl p-8 shadow-xl">
-
-        <!-- CONTACT BLOCK -->
-        <h3 class="text-xl font-semibold text-white mb-4">Book a working session</h3>
-
-        <div class="text-gray-300 text-sm leading-relaxed space-y-2 mb-6">
-            <p>Email: 
-                <a href="mailto:donggie@gmail.com" class="text-amber-400 hover:text-amber-300">donggie@gmail.com</a>
-            </p>
-            <p>LinkedIn:
-                <a href="https://www.linkedin.com/in/don-florencio/" 
-                   target="_blank" class="text-amber-400 hover:text-amber-300">
-                    Connect with Don
-                </a>
-            </p>
-            <p>Calendar:
-                <a href="https://calendly.com/donflorencio/30min" 
-                   target="_blank" class="text-amber-400 hover:text-amber-300">
-                    Grab a 30–60 minute slot
-                </a>
-            </p>
-        </div>
-
-        <!-- CLEAN DIVIDER LINE -->
-        <hr class="border-gray-700 mb-6">
-
-        <!-- CALENDLY EMBED — FIXED HEIGHT (NO OVERFLOW), VISUALLY LIGHTER -->
-        <div class="rounded-xl overflow-hidden border border-[#2a2a35]">
-            <iframe 
-                src="https://calendly.com/donflorencio/30min?hide_gdpr_banner=1&background_color=0a0a14&text_color=ffffff&primary_color=f5b237"
-                width="100%" 
-                height="550"
-                frameborder="0"
-                style="border: none;">
-            </iframe>
-        </div>
-    </div>
-
-</div>
-
-<!-- FOOTER (UNCHANGED) -->
-<footer class="text-center py-10 text-gray-500 text-sm mt-20">
-    © 2025 FORGE GTM. All rights reserved.
-</footer>
-
+  <!-- FOOTER YEAR SCRIPT -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
