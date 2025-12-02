@@ -2,20 +2,16 @@
 <html lang="en">
 <head>
   <base href="/FORGE-GTM/">
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="forge-favicon-48.png">
-  <link rel="apple-touch-icon" href="forge-favicon-180.png">
-<style>
-/* === Global Heading Color Standard (Homepage Tone) === */
-h1, h2, h3, h4, h5, h6 {
-  color: #e5e7eb !important; /* consistent light gray tone */
-}
-</style>
 
+  <!-- FAVICONS -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="forge-favicon-48.png" />
+  <link rel="apple-touch-icon" href="forge-favicon-180.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="forge-favicon-512.png" />
+
+  <!-- META -->
   <meta charset="utf-8" />
   <title>Forge GTM — About Don</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,10 +24,26 @@ h1, h2, h3, h4, h5, h6 {
   <meta property="og:url" content="https://donggie-oss.github.io/FORGE-GTM/about.html">
   <meta property="og:image" content="https://donggie-oss.github.io/FORGE-GTM/assets/forge-share.png">
 
+  <!-- TAILWIND -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- GLOBAL STYLE FIXES -->
   <style>
+    /* Core layout */
     .forge-container { max-width: 1120px; }
     html { overflow-y: scroll; }
+
+    /* === Global Heading Color Standard === */
+    h1, h2, h3, h4, h5, h6 {
+      color: #e5e7eb !important; /* consistent light gray tone */
+    }
+
+    /* Override Tailwind inline text classes */
+    [class*="text-slate-50"],
+    [class*="text-slate-100"],
+    [class*="text-slate-200"] {
+      color: #e5e7eb !important;
+    }
   </style>
 </head>
 
@@ -90,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
         <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-12 sm:py-16 grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-start">
           <div>
             <p class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300">About Don</p>
-            <h1 class="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-50">
+            <h1 class="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">
               30+ years of turning stalled territories into disciplined GTM engines.
             </h1>
             <p class="mt-4 text-sm text-slate-300">
@@ -111,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
               <img src="assets/headshot.jpg" alt="Don Florencio" class="h-full w-full object-cover" />
             </div>
             <div class="text-center text-xs text-slate-300">
-              <div class="font-semibold text-slate-50">Don Florencio</div>
+              <div class="font-semibold">Don Florencio</div>
               <div>GTM Architecture &amp; Outbound Systems</div>
             </div>
           </div>
