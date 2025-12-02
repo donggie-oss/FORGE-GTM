@@ -27,24 +27,21 @@
   <!-- TAILWIND -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- GLOBAL STYLE FIXES -->
+  <!-- BASE STYLES -->
   <style>
-    /* Core layout */
     .forge-container { max-width: 1120px; }
     html { overflow-y: scroll; }
-
-    /* === Global Heading Color Standard === */
-    h1, h2, h3, h4, h5, h6 {
-      color: #e5e7eb !important; /* consistent light gray tone */
-    }
-
-    /* Override Tailwind inline text classes */
-    [class*="text-slate-50"],
-    [class*="text-slate-100"],
-    [class*="text-slate-200"] {
-      color: #e5e7eb !important;
-    }
   </style>
+
+  <!-- FINAL GUARANTEED HEADING COLOR FIX -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+      headings.forEach(h => {
+        h.style.color = "#e5e7eb"; // Tailwind gray-200 tone
+      });
+    });
+  </script>
 </head>
 
 <body class="bg-slate-950 text-slate-50 antialiased">
