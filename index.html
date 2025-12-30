@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
   <base href="/FORGE-GTM/">
-
-  <!-- FAVICONS (CANONICAL) -->
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
@@ -15,111 +13,196 @@
   <meta charset="utf-8" />
   <title>FORGE GTM — RSO & Outbound Engine Consultancy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- 🔒 FONT + LAYOUT LOCK (THIS IS THE FIX) -->
   <style>
     .forge-container { max-width: 1120px; }
-
     html { overflow-y: scroll; }
-
-    body {
-      font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif;
-    }
-
-    h1, h2, h3, h4, h5 {
-      letter-spacing: -0.01em;
-    }
   </style>
 </head>
 
 <body class="bg-slate-950 text-slate-50 antialiased">
-<div class="min-h-screen flex flex-col">
+  <div class="min-h-screen flex flex-col">
 
-  <!-- HEADER -->
-  <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
-    <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
-        <div class="text-lg font-semibold tracking-[0.16em] uppercase">
-          FORGE <span class="text-amber-400">GTM</span>
-        </div>
-      </a>
-
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
-        <a href="index.html" class="text-amber-400 font-semibold">Home</a>
-        <a href="signalgate.html" class="text-slate-300 hover:text-amber-300">SignalGate</a>
-        <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
-        <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
-        <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
-        <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
-      </nav>
-
-      <div class="hidden md:flex min-w-[180px] justify-end">
-        <a href="work-with-us.html"
-           class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 hover:bg-amber-300 transition-colors">
-          Book a working session
+    <!-- HEADER -->
+    <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
+          <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
+            FORGE <span class="text-amber-400">GTM</span>
+          </div>
         </a>
-      </div>
-    </div>
-  </header>
 
-  <!-- MAIN -->
-  <main class="flex-1">
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="index.html" class="text-amber-400 font-semibold">Home</a>
+          <a href="signalgate.html" class="text-slate-300 hover:text-amber-300">SignalGate</a>
+          <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
+          <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
+          <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
+          <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
+        </nav>
 
-    <!-- HERO -->
-    <section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800 py-20 sm:py-24">
-      <div class="mx-auto forge-container px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-
-        <div class="flex justify-center md:justify-start">
-          <img src="forge-gtm.png" alt="Forge GTM Panel Logo" class="h-auto max-w-full" />
+        <div class="hidden md:flex min-w-[180px] justify-end">
+          <a href="work-with-us.html"
+             class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
+            Book a working session
+          </a>
         </div>
 
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-300">
-            RSO & OUTBOUND ENGINE CONSULTANCY
-          </p>
+        <!-- MOBILE MENU -->
+        <button type="button"
+          class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
+          aria-controls="mobile-nav" aria-expanded="false"
+          onclick="const m=document.getElementById('mobile-nav'); const btn=this; m.classList.toggle('hidden'); btn.setAttribute('aria-expanded', m.classList.contains('hidden') ? 'false' : 'true');">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
 
-          <h1 class="mt-6 text-4xl sm:text-5xl font-bold leading-snug">
-            Discipline Before Momentum
-          </h1>
+      <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
+        <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
+          <a href="index.html">Home</a>
+          <a href="signalgate.html">SignalGate</a>
+          <a href="method.html">Method</a>
+          <a href="systems.html">Systems</a>
+          <a href="about.html">About Don</a>
+          <a href="work-with-us.html">Work With Us</a>
+        </nav>
+      </div>
+    </header>
 
-          <p class="mt-6 text-base text-slate-300 max-w-md">
-            Forge GTM operates at the point where go-to-market decisions become irreversible.
-          </p>
+    <!-- MAIN -->
+    <main class="flex-1">
 
-          <p class="mt-4 text-base text-slate-300 max-w-md">
-            <a href="signalgate.html" class="text-amber-400 hover:underline">
-              SignalGate is our account focus validation instrument.
+      <!-- HERO -->
+      <section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800 py-20 sm:py-24">
+        <div class="mx-auto forge-container px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+          <!-- HERO IMAGE -->
+          <div class="flex justify-center md:justify-start">
+            <img
+              src="forge-gtm.png"
+              alt="Forge GTM Panel Logo"
+              class="h-auto max-w-full"
+            />
+          </div>
+
+          <!-- HERO TEXT -->
+          <div class="text-left md:pl-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-300">
+              RSO & OUTBOUND ENGINE CONSULTANCY
+            </p>
+
+            <h1 class="mt-6 text-4xl sm:text-5xl font-bold leading-snug">
+              Discipline Before Momentum
+            </h1>
+
+            <p class="mt-6 text-sm sm:text-base text-slate-300 leading-relaxed max-w-md">
+              Forge GTM operates at the point where go-to-market decisions become irreversible.
+            </p>
+
+            <p class="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed max-w-md">
+              <a href="signalgate.html" class="text-amber-400 hover:underline">
+                SignalGate is our account focus validation instrument.
+              </a>
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- RSO ENGINE (RESTORED CONTENT) -->
+      <section class="bg-slate-950 py-16 border-b border-slate-800">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
+          <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-8 shadow-xl">
+
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-lg font-semibold">The RSO Engine</h2>
+              <span class="text-xs text-emerald-400 bg-emerald-400/10 px-2 py-1 rounded-full">● Live in-field</span>
+            </div>
+
+            <p class="text-sm text-slate-300 max-w-2xl mb-8">
+              One operating system for research, RSOs, outbound, and leadership decisions —
+              so every touch ties back to a clear, evidence-backed bet.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-200 text-sm">
+
+              <div class="rounded-xl border border-slate-700 bg-slate-800/40 p-4">
+                <h3 class="font-semibold mb-1 text-amber-300">Module 1 & Diagnostics</h3>
+                <ul class="text-xs space-y-1 text-slate-300">
+                  <li>• Leadership psychology map</li>
+                  <li>• Tech stack & leakage points</li>
+                  <li>• Margin pool & risk zones</li>
+                </ul>
+              </div>
+
+              <div class="rounded-xl border border-slate-700 bg-slate-800/40 p-4">
+                <h3 class="font-semibold mb-1 text-amber-300">RSO & Playbooks</h3>
+                <ul class="text-xs space-y-1 text-slate-300">
+                  <li>• Account-specific RSOs</li>
+                  <li>• Email & DM doctrines</li>
+                  <li>• Meeting-flow scripts</li>
+                </ul>
+              </div>
+
+              <div class="rounded-xl border border-slate-700 bg-slate-800/40 p-4">
+                <h3 class="font-semibold mb-1 text-amber-300">Outbound Engine</h3>
+                <ul class="text-xs space-y-1 text-slate-300">
+                  <li>• Outreach-ready lists</li>
+                  <li>• Penetration strategies</li>
+                  <li>• “Like–Know–Trust” paths</li>
+                </ul>
+              </div>
+
+              <div class="rounded-xl border border-slate-700 bg-slate-800/40 p-4">
+                <h3 class="font-semibold mb-1 text-amber-300">Command & Control</h3>
+                <ul class="text-xs space-y-1 text-slate-300">
+                  <li>• Rhythm & scoreboard</li>
+                  <li>• Breakpoint monitoring</li>
+                  <li>• Leadership guardrails</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA (RESTORED CONTENT) -->
+      <section class="bg-slate-950 py-16">
+        <div class="mx-auto forge-container px-4 text-center">
+          <div class="flex flex-wrap justify-center gap-4">
+
+            <a href="work-with-us.html"
+               class="inline-flex items-center rounded-full bg-amber-400 px-8 py-4 text-sm font-semibold text-slate-950 shadow-md hover:bg-amber-300 transition-colors">
+              Book a working session
             </a>
-          </p>
+
+            <a href="method.html"
+               class="inline-flex items-center rounded-full border border-slate-600 px-8 py-4 text-sm font-semibold text-slate-100 hover:bg-slate-800 transition-colors">
+              See the RSO Engine in detail
+            </a>
+
+          </div>
         </div>
+      </section>
 
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
+        © <span id="year"></span> FORGE GTM. All rights reserved.
       </div>
-    </section>
+    </footer>
 
-  </main>
+  </div>
 
-  <!-- FOOTER -->
-  <footer class="border-t border-slate-800 bg-slate-950">
-    <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
-      © <span id="year"></span> FORGE GTM. All rights reserved.
-    </div>
-  </footer>
-
-</div>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
