@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SignalGate | Forge GTM</title>
 
-  <!-- FAVICONS — MATCH INDEX -->
+  <!-- MATCH INDEX.HTML FAVICONS (DO NOT CHANGE) -->
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="forge-favicon-48.png">
-  <link rel="apple-touch-icon" href="forge-favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="forge-favicon-48.png" />
+  <link rel="apple-touch-icon" href="forge-favicon-180.png" />
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -24,165 +24,185 @@
 </head>
 
 <body class="bg-slate-950 text-slate-50 antialiased">
-<div class="min-h-screen flex flex-col">
+  <div class="min-h-screen flex flex-col">
 
-<!-- HEADER -->
-<header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
-  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
-    <a href="index.html" class="text-lg font-semibold tracking-[0.16em] uppercase">
-      FORGE <span class="text-amber-400">GTM</span>
-    </a>
+    <!-- HEADER -->
+    <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
+          <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
+            FORGE <span class="text-amber-400">GTM</span>
+          </div>
+        </a>
 
-    <nav class="hidden md:flex gap-7 text-sm font-medium">
-      <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
-      <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
-      <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
-      <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
-      <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
-      <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
-    </nav>
+        <!-- DESKTOP NAV -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
+          <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
+          <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
+          <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
+          <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
+          <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
+        </nav>
 
-    <div class="hidden md:block">
-      <a href="work-with-us.html"
-         class="rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 hover:bg-amber-300">
-        Book a working session
-      </a>
-    </div>
+        <div class="hidden md:flex min-w-[180px] justify-end">
+          <a href="work-with-us.html"
+             class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
+            Book a working session
+          </a>
+        </div>
 
-    <button class="md:hidden p-2" onclick="mobileNav.classList.toggle('hidden')">
-      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-  </div>
-
-  <div id="mobileNav" class="md:hidden hidden border-t border-slate-800">
-    <nav class="px-4 py-3 flex flex-col gap-3 text-sm">
-      <a href="index.html">Home</a>
-      <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
-      <a href="method.html">Method</a>
-      <a href="systems.html">Systems</a>
-      <a href="about.html">About Don</a>
-      <a href="work-with-us.html">Work With Us</a>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800 py-20">
-  <div class="mx-auto forge-container px-4">
-    <p class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-300 mb-4">
-      Account Focus Validation
-    </p>
-
-    <h1 class="text-4xl sm:text-5xl font-bold mb-6">SignalGate</h1>
-
-    <p class="text-slate-300 max-w-2xl">
-      Is this account worth pursuing at all?
-    </p>
-  </div>
-</section>
-
-<!-- CONTENT PANEL (MATCHES OTHER PAGES) -->
-<section class="bg-slate-950 py-20 border-b border-slate-800">
-  <div class="mx-auto forge-container px-4">
-
-    <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-10 space-y-10">
-
-      <p class="text-slate-200 max-w-3xl">
-        SignalGate exists to answer that question before time, money, and credibility are committed.
-      </p>
-
-      <div>
-        <h2 class="text-lg font-semibold mb-3">What SignalGate Is</h2>
-        <p class="text-slate-300 mb-3">
-          SignalGate validates account focus using publicly observable signals.
-          It determines whether pursuit is rational, independent of execution quality.
-        </p>
-        <p class="text-slate-300">
-          It does not rely on internal access, assumptions, or sales narratives.
-        </p>
+        <!-- MOBILE TOGGLE -->
+        <button type="button"
+          class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
+          aria-label="Open menu"
+          onclick="document.getElementById('mobile-nav').classList.toggle('hidden')">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
       </div>
 
-      <div>
-        <h2 class="text-lg font-semibold mb-3">What SignalGate Produces</h2>
-        <ul class="list-disc list-inside space-y-2 text-slate-300">
-          <li><strong>Account Disposition</strong> — PURSUE or PASS</li>
-          <li><strong>Signal Ledger</strong> — Findings tied to public sources</li>
-          <li><strong>Operational Signal Summary</strong></li>
-          <li><strong>Explicit Unknowns</strong></li>
-        </ul>
-
-        <p class="mt-4 text-slate-300">
-          No recommendations. No next steps.
-        </p>
-
-        <p class="mt-4 text-slate-300">
-          Each SignalGate engagement includes a concise <strong>RSO-format brief</strong> —
-          documenting signal evidence, disposition, and explicit unknowns —
-          so decisions are recorded, reviewable, and defensible.
-        </p>
+      <!-- MOBILE NAV -->
+      <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
+        <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium">
+          <a href="index.html" class="text-slate-200">Home</a>
+          <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
+          <a href="method.html" class="text-slate-200">Method</a>
+          <a href="systems.html" class="text-slate-200">Systems</a>
+          <a href="about.html" class="text-slate-200">About Don</a>
+          <a href="work-with-us.html" class="text-slate-200">Work With Us</a>
+        </nav>
       </div>
+    </header>
 
-      <div>
-        <h2 class="text-lg font-semibold mb-3">What SignalGate Is Not</h2>
-        <ul class="list-disc list-inside space-y-2 text-slate-300">
-          <li>Not a sales audit</li>
-          <li>Not consulting</li>
-          <li>Not RevOps</li>
-          <li>Not a recommendation engine</li>
-        </ul>
+    <!-- MAIN -->
+    <main class="flex-1">
+
+      <!-- HERO (matches other pages: same gradient + border) -->
+      <section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800 py-20">
+        <div class="mx-auto forge-container px-4">
+          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-300 mb-4">
+            Account Focus Validation
+          </p>
+
+          <h1 class="text-4xl sm:text-5xl font-bold mb-6">
+            SignalGate
+          </h1>
+
+          <p class="text-slate-300 max-w-2xl">
+            Is this account worth pursuing at all?
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTENT WRAP (single consistent band + container, like Method/Systems) -->
+      <section class="bg-slate-950 py-16 border-b border-slate-800">
+        <div class="mx-auto forge-container px-4">
+
+          <!-- SINGLE, UNIFIED CARD (fixes the “PDF stuck in” look) -->
+          <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-8 md:p-10">
+            <p class="text-slate-200 mb-10">
+              SignalGate exists to answer that question before time, money, and credibility are committed.
+            </p>
+
+            <div class="space-y-10">
+
+              <div>
+                <h2 class="text-lg font-semibold mb-4">What SignalGate Is</h2>
+                <p class="text-slate-300 mb-4">
+                  SignalGate validates account focus using publicly observable signals.
+                  It determines whether pursuit is rational, independent of execution quality.
+                </p>
+                <p class="text-slate-300">
+                  It does not rely on internal access, assumptions, or sales narratives.
+                </p>
+              </div>
+
+              <div class="border-t border-slate-800/80 pt-10">
+                <h2 class="text-lg font-semibold mb-4">What SignalGate Produces</h2>
+                <ul class="list-disc list-inside space-y-2 text-slate-300">
+                  <li><strong>Account Disposition</strong> — PURSUE or PASS</li>
+                  <li><strong>Signal Ledger</strong> — Findings tied to public sources</li>
+                  <li><strong>Operational Signal Summary</strong></li>
+                  <li><strong>Explicit Unknowns</strong></li>
+                </ul>
+
+                <p class="mt-6 text-slate-300">
+                  No recommendations. No next steps.
+                </p>
+
+                <p class="mt-4 text-slate-300">
+                  Each SignalGate engagement includes a concise RSO-format brief —
+                  documenting signal evidence, disposition, and explicit unknowns —
+                  so decisions are recorded, reviewable, and defensible.
+                </p>
+              </div>
+
+              <div class="border-t border-slate-800/80 pt-10">
+                <h2 class="text-lg font-semibold mb-4">What SignalGate Is Not</h2>
+                <ul class="list-disc list-inside space-y-2 text-slate-300">
+                  <li>Not a sales audit</li>
+                  <li>Not consulting</li>
+                  <li>Not RevOps</li>
+                  <li>Not a recommendation engine</li>
+                </ul>
+              </div>
+
+              <div class="border-t border-slate-800/80 pt-10">
+                <h2 class="text-lg font-semibold mb-4">Ecosystem Scope</h2>
+                <p class="text-slate-300">
+                  SignalGate is built on modular signal libraries.
+                  Validation confidence is currently strongest in Odoo-aligned environments.
+                  Additional ecosystems are incorporated only once their signal libraries meet the same validation standard.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CTA BAND (kept inside MAIN so it does not “float” as an afterthought) -->
+      <section class="bg-slate-950 py-20 border-b border-slate-800">
+        <div class="mx-auto forge-container px-4 max-w-3xl text-center">
+
+          <h2 class="text-2xl font-semibold mb-4">
+            Pressure-test account focus before momentum sets in
+          </h2>
+
+          <p class="text-slate-300 mb-8">
+            SignalGate engagements are conducted as working sessions.
+            No demos. No pitches. Just a clear determination of whether pursuit is rational — or a mistake.
+          </p>
+
+          <a href="work-with-us.html"
+             class="inline-flex items-center rounded-full bg-amber-400 px-8 py-4 text-sm font-semibold text-slate-950 shadow-md hover:bg-amber-300 transition-colors">
+            Book a working session
+          </a>
+
+          <p class="mt-6 text-sm text-slate-400">
+            Want to understand how SignalGate fits into the broader GTM system?
+            <a href="method.html" class="text-amber-400 hover:underline">See the Method</a>
+          </p>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950">
+      <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
+        © <span id="year"></span> FORGE GTM. All rights reserved.
       </div>
+    </footer>
 
-      <div>
-        <h2 class="text-lg font-semibold mb-3">Ecosystem Scope</h2>
-        <p class="text-slate-300">
-          SignalGate is built on modular signal libraries. Validation confidence is currently
-          strongest in Odoo-aligned environments. Additional ecosystems are incorporated only
-          once their signal libraries meet the same validation standard.
-        </p>
-      </div>
-
-    </div>
   </div>
-</section>
 
-<!-- CTA -->
-<section class="bg-slate-950 py-20">
-  <div class="mx-auto forge-container px-4 max-w-3xl text-center">
-    <h2 class="text-2xl font-semibold mb-4">
-      Pressure-test account focus before momentum sets in
-    </h2>
-
-    <p class="text-slate-300 mb-8">
-      SignalGate engagements are conducted as working sessions.
-      No demos. No pitches. Just a clear determination of whether pursuit is rational — or a mistake.
-    </p>
-
-    <a href="work-with-us.html"
-       class="inline-flex rounded-full bg-amber-400 px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-amber-300">
-      Book a working session
-    </a>
-
-    <p class="mt-6 text-sm text-slate-400">
-      Want to understand how SignalGate fits into the broader GTM system?
-      <a href="method.html" class="text-amber-400 hover:underline">See the Method</a>
-    </p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="border-t border-slate-800 bg-slate-950">
-  <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
-    © <span id="year"></span> FORGE GTM. All rights reserved.
-  </div>
-</footer>
-
-</div>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
