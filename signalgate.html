@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
   <base href="/FORGE-GTM/">
+
+  <!-- FAVICONS — COPIED EXACTLY FROM INDEX (DO NOT TOUCH) -->
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png">
   <link rel="icon" type="image/png" sizes="48x48" href="forge-favicon-48.png">
   <link rel="apple-touch-icon" href="forge-favicon-180.png">
+  <!-- END FAVICONS -->
 
   <meta charset="utf-8" />
   <title>Forge GTM — SignalGate</title>
@@ -46,25 +51,6 @@
             Book a working session
           </a>
         </div>
-
-        <button type="button"
-          class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
-          onclick="document.getElementById('mobile-nav').classList.toggle('hidden')">
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
-
-      <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
-        <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
-          <a href="index.html">Home</a>
-          <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
-          <a href="method.html">Method</a>
-          <a href="systems.html">Systems</a>
-          <a href="about.html">About Don</a>
-          <a href="work-with-us.html">Work With Us</a>
-        </nav>
       </div>
     </header>
 
@@ -82,7 +68,7 @@
           </h1>
           <p class="mt-4 max-w-2xl text-sm text-slate-300">
             A disciplined filter that answers one question before momentum sets in:<br>
-            Is this account rational to pursue at all?
+            Is this account rational to <span class="text-amber-300 font-medium">pursue</span> at all?
           </p>
         </div>
       </section>
@@ -106,7 +92,12 @@
           <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
             <h2 class="text-lg font-semibold">What SignalGate Produces</h2>
             <ul class="mt-3 space-y-1.5 text-[11px] text-slate-300">
-              <li>• Account disposition: PURSUE or PASS</li>
+              <li>
+                • Account disposition:
+                <span class="text-emerald-400 font-medium">PURSUE</span>
+                or
+                <span class="text-rose-400 font-medium">PASS</span>
+              </li>
               <li>• Signal ledger tied to public evidence</li>
               <li>• Operational signal summary</li>
               <li>• Explicit, recorded unknowns</li>
@@ -146,7 +137,8 @@
             <h2 class="text-lg font-semibold">Engagement & Pricing</h2>
 
             <p class="mt-3 text-slate-300">
-              SignalGate is priced at <strong>$1,000 per account analyzed</strong>.
+              SignalGate is priced at
+              <strong class="text-amber-300">$1,000 per account analyzed</strong>.
             </p>
 
             <p class="mt-3 text-slate-300">
