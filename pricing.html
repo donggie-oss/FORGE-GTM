@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Forge GTM pricing enforces order. SignalGate, Module One, and RSOs are sequenced to prevent execution on false assumptions.">
 
-  <link rel="icon" href="forge-favicon-32.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png">
+  <link rel="apple-touch-icon" href="forge-favicon-180.png">
 
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .forge-container { max-width: 1120px; }
     html { overflow-y: scroll; }
@@ -19,12 +21,14 @@
 <body class="bg-slate-950 text-slate-50 antialiased">
 <div class="min-h-screen flex flex-col">
 
-<!-- ================= HEADER (CANONICAL) ================= -->
+<!-- ================= CANONICAL HEADER ================= -->
 <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur sticky top-0 z-50">
-  <div class="mx-auto forge-container px-4 h-16 flex items-center justify-between">
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
 
-    <a href="index.html" class="text-lg font-semibold tracking-[0.16em] uppercase">
-      FORGE <span class="text-amber-400">GTM</span>
+    <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
+      <div class="text-lg font-semibold tracking-[0.16em] uppercase">
+        FORGE <span class="text-amber-400">GTM</span>
+      </div>
     </a>
 
     <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
@@ -38,17 +42,41 @@
       <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
     </nav>
 
-    <a href="work-with-us.html"
-       class="hidden md:inline-flex rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 hover:bg-amber-300">
-      Book a working session
-    </a>
+    <div class="hidden md:flex min-w-[180px] justify-end">
+      <a href="work-with-us.html"
+         class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 hover:bg-amber-300 transition-colors">
+        Book a working session
+      </a>
+    </div>
+
+    <!-- MOBILE -->
+    <button type="button"
+      class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
+      aria-controls="mobile-nav" aria-expanded="false"
+      onclick="const m=document.getElementById('mobile-nav'); const btn=this; m.classList.toggle('hidden'); btn.setAttribute('aria-expanded', m.classList.contains('hidden') ? 'false' : 'true');">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
+    <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
+      <a href="index.html">Home</a>
+      <a href="signalgate.html">SignalGate</a>
+      <a href="method.html">Method</a>
+      <a href="pricing.html" class="text-amber-400 font-semibold">Pricing</a>
+      <a href="rso.html">RSO</a>
+      <a href="systems.html">Systems</a>
+      <a href="about.html">About Don</a>
+      <a href="work-with-us.html">Work With Us</a>
+    </nav>
   </div>
 </header>
 
 <!-- ================= MAIN ================= -->
 <main class="flex-1">
 
-<!-- HERO -->
 <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900">
   <div class="mx-auto forge-container px-4 py-16">
     <p class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300">Pricing</p>
@@ -60,95 +88,68 @@
   </div>
 </section>
 
-<!-- PRICING GRID -->
 <section class="bg-slate-950 border-b border-slate-800">
   <div class="mx-auto forge-container px-4 py-16 grid gap-8 md:grid-cols-3">
 
-    <!-- SignalGate -->
     <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
       <h2 class="text-lg font-semibold">SignalGate</h2>
-      <p class="mt-1 text-sm text-slate-400">Account admissibility</p>
-
-      <p class="mt-4 text-3xl font-semibold text-amber-300">$1,000</p>
-
-      <ul class="mt-6 space-y-2 text-sm text-slate-300">
-        <li>• Evaluates publicly observable signals</li>
-        <li>• Records evidence and explicit unknowns</li>
-        <li>• Returns a clear <strong>PURSUE</strong> or <strong>PASS</strong></li>
+      <p class="mt-2 text-sm text-slate-400">Account admissibility</p>
+      <p class="mt-4 text-2xl font-semibold text-amber-300">$1,000</p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-300">
+        <li>• Public-signal evaluation only</li>
+        <li>• Evidence + explicit unknowns</li>
+        <li>• Binary outcome: PURSUE / PASS</li>
       </ul>
-
-      <p class="mt-6 text-xs text-slate-400">
-        No strategy. No recommendations. No credit toward other work.
-        If PASS, the engagement ends cleanly.
+      <p class="mt-4 text-xs text-slate-400">
+        No strategy. No recommendations. No credit forward. PASS ends engagement.
       </p>
     </div>
 
-    <!-- Module One -->
     <div class="rounded-2xl border border-amber-500/40 bg-slate-900/80 p-6">
       <h2 class="text-lg font-semibold">Module One</h2>
-      <p class="mt-1 text-sm text-slate-400">Required operational gate</p>
-
-      <p class="mt-4 text-3xl font-semibold text-amber-300">$3,500</p>
-
-      <ul class="mt-6 space-y-2 text-sm text-slate-300">
-        <li>• Leadership psychology & decision authority</li>
-        <li>• Operational constraints and leakage points</li>
-        <li>• Margin pools, risk zones, non-negotiables</li>
-        <li>• Explicit unknowns surfaced and recorded</li>
+      <p class="mt-2 text-sm text-slate-400">Required operational gate</p>
+      <p class="mt-4 text-2xl font-semibold text-amber-300">$3,500</p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-300">
+        <li>• Leadership & authority mapping</li>
+        <li>• Constraints, leakage, non-negotiables</li>
+        <li>• Margin pools & risk zones</li>
+        <li>• Explicit unknowns recorded</li>
       </ul>
-
-      <p class="mt-6 text-xs text-slate-400">
-        This stage cannot be skipped. It carries real accountability
-        and is intentionally the most demanding engagement.
+      <p class="mt-4 text-xs text-slate-400">
+        Cannot be skipped. Most demanding by design.
       </p>
     </div>
 
-    <!-- RSO -->
     <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 opacity-90">
-      <h2 class="text-lg font-semibold">Recommended Solution Overview (RSO)</h2>
-      <p class="mt-1 text-sm text-slate-400">Execution artifact</p>
-
-      <p class="mt-4 text-3xl font-semibold text-slate-300">$2,500</p>
-
-      <ul class="mt-6 space-y-2 text-sm text-slate-300">
+      <h2 class="text-lg font-semibold">RSO</h2>
+      <p class="mt-2 text-sm text-slate-400">Downstream execution artifact</p>
+      <p class="mt-4 text-2xl font-semibold text-slate-300">$2,500</p>
+      <ul class="mt-4 space-y-2 text-sm text-slate-300">
         <li>• Externalizes verified understanding</li>
-        <li>• Operator-grade, evidence-led narrative</li>
-        <li>• Designed for execution, not discovery</li>
+        <li>• Operator-grade narrative</li>
+        <li>• Not discovery</li>
       </ul>
-
-      <p class="mt-6 text-xs text-slate-400">
-        RSOs are available only after Module One.
-        They are not sold independently.
+      <p class="mt-4 text-xs text-slate-400">
+        Only after Module One. Never standalone.
       </p>
     </div>
 
-  </div>
-</section>
-
-<!-- WHY -->
-<section class="bg-slate-950">
-  <div class="mx-auto forge-container px-4 py-16">
-    <h2 class="text-xl font-semibold">Why you can’t buy an RSO yet</h2>
-    <p class="mt-4 max-w-3xl text-slate-300">
-      Most GTM failures don’t come from poor execution.
-      They come from confident execution on false assumptions.
-    </p>
-    <p class="mt-4 max-w-3xl text-slate-300">
-      RSOs amplify whatever understanding exists.
-      Module One ensures that understanding is real before anything is amplified.
-    </p>
   </div>
 </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer class="border-t border-slate-800 bg-slate-950">
-  <div class="mx-auto forge-container px-4 py-6 text-xs text-slate-500">
-    © 2025 FORGE GTM. All rights reserved.
+  <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
+    © <span id="year"></span> FORGE GTM. All rights reserved.
   </div>
 </footer>
 
 </div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
+
