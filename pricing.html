@@ -48,46 +48,34 @@
         Book a working session
       </a>
     </div>
-
-    <!-- MOBILE -->
-    <button type="button"
-      class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
-      aria-controls="mobile-nav" aria-expanded="false"
-      onclick="const m=document.getElementById('mobile-nav'); const btn=this; m.classList.toggle('hidden'); btn.setAttribute('aria-expanded', m.classList.contains('hidden') ? 'false' : 'true');">
-      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-  </div>
-
-  <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
-    <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
-      <a href="index.html">Home</a>
-      <a href="signalgate.html">SignalGate</a>
-      <a href="method.html">Method</a>
-      <a href="pricing.html" class="text-amber-400 font-semibold">Pricing</a>
-      <a href="rso.html">RSO</a>
-      <a href="systems.html">Systems</a>
-      <a href="about.html">About Don</a>
-      <a href="work-with-us.html">Work With Us</a>
-    </nav>
   </div>
 </header>
 
 <!-- ================= MAIN ================= -->
 <main class="flex-1">
 
+<!-- ================= HERO (CANONICAL DEPTH) ================= -->
 <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900">
-  <div class="mx-auto forge-container px-4 py-16">
-    <p class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300">Pricing</p>
-    <h1 class="mt-4 text-4xl font-semibold">Pricing enforces order.</h1>
-    <p class="mt-6 max-w-2xl text-slate-300">
+  <div class="mx-auto forge-container px-4 py-20 sm:py-24">
+    <p class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300">
+      PRICING
+    </p>
+    <h1 class="mt-6 text-4xl sm:text-5xl font-bold leading-snug">
+      Pricing enforces order.
+    </h1>
+    <p class="mt-6 max-w-2xl text-sm sm:text-base text-slate-300 leading-relaxed">
       Forge GTM is a sequenced decision system. You don’t buy pieces out of order.
       Pricing exists to prevent execution on false assumptions.
     </p>
   </div>
 </section>
 
+<!-- ================= HERO SPACER / RHYTHM ================= -->
+<section class="bg-slate-950">
+  <div class="mx-auto forge-container px-4 py-10 sm:py-12"></div>
+</section>
+
+<!-- ================= PRICING GRID ================= -->
 <section class="bg-slate-950 border-b border-slate-800">
   <div class="mx-auto forge-container px-4 py-16 grid gap-8 md:grid-cols-3">
 
@@ -97,8 +85,8 @@
       <p class="mt-4 text-2xl font-semibold text-amber-300">$1,000</p>
       <ul class="mt-4 space-y-2 text-sm text-slate-300">
         <li>• Public-signal evaluation only</li>
-        <li>• Evidence + explicit unknowns</li>
-        <li>• Binary outcome: PURSUE / PASS</li>
+        <li>• Evidence and explicit unknowns</li>
+        <li>• Binary outcome: PURSUE or PASS</li>
       </ul>
       <p class="mt-4 text-xs text-slate-400">
         No strategy. No recommendations. No credit forward. PASS ends engagement.
@@ -121,13 +109,13 @@
     </div>
 
     <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 opacity-90">
-      <h2 class="text-lg font-semibold">RSO</h2>
-      <p class="mt-2 text-sm text-slate-400">Downstream execution artifact</p>
+      <h2 class="text-lg font-semibold">Recommended Solution Overview (RSO)</h2>
+      <p class="mt-2 text-sm text-slate-400">Execution artifact</p>
       <p class="mt-4 text-2xl font-semibold text-slate-300">$2,500</p>
       <ul class="mt-4 space-y-2 text-sm text-slate-300">
         <li>• Externalizes verified understanding</li>
         <li>• Operator-grade narrative</li>
-        <li>• Not discovery</li>
+        <li>• Designed for execution</li>
       </ul>
       <p class="mt-4 text-xs text-slate-400">
         Only after Module One. Never standalone.
@@ -137,8 +125,29 @@
   </div>
 </section>
 
+<!-- ================= POST-GRID NARRATIVE (STRUCTURAL BALLAST) ================= -->
+<section class="bg-slate-950">
+  <div class="mx-auto forge-container px-4 py-14">
+    <h2 class="text-xl font-semibold">Why you can’t buy an RSO yet</h2>
+    <p class="mt-4 max-w-3xl text-sm text-slate-300">
+      Most GTM failures don’t come from poor execution. They come from confident execution
+      on false assumptions.
+    </p>
+    <p class="mt-4 max-w-3xl text-sm text-slate-300">
+      RSOs amplify whatever understanding exists. Module One ensures that understanding
+      is real before anything is amplified.
+    </p>
+  </div>
+</section>
+
+<!-- ================= PRE-FOOTER SPACER ================= -->
+<section class="bg-slate-950">
+  <div class="mx-auto forge-container px-4 py-10 sm:py-12"></div>
+</section>
+
 </main>
 
+<!-- ================= FOOTER ================= -->
 <footer class="border-t border-slate-800 bg-slate-950">
   <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
     © <span id="year"></span> FORGE GTM. All rights reserved.
@@ -152,4 +161,3 @@
 </script>
 </body>
 </html>
-
