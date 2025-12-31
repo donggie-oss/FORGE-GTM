@@ -1,156 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <base href="/FORGE-GTM/">
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png" />
-
-  <meta charset="utf-8" />
-  <title>Forge GTM — SignalGate</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="SignalGate is a hard gate on account pursuit — before momentum sets in.">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .forge-container { max-width: 1120px; }
-    html { overflow-y: scroll; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignalGate — Forge GTM</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body class="bg-slate-950 text-slate-50 antialiased">
-<div class="min-h-screen flex flex-col">
+<body class="dark">
 
-  <!-- ========================= -->
-  <!-- HEADER (RESTORED)         -->
-  <!-- ========================= -->
-  <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
-    <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
-        <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
-          FORGE <span class="text-amber-400">GTM</span>
-        </div>
-      </a>
-
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
-        <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
-        <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
-        <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
-        <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
-        <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
-        <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
-      </nav>
-
-      <div class="hidden md:flex min-w-[180px] justify-end">
-        <a href="work-with-us.html"
-           class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
-          Book a working session
-        </a>
-      </div>
-
-      <!-- MOBILE MENU -->
-      <button type="button"
-        class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
-        onclick="
-          const m=document.getElementById('mobile-nav');
-          const btn=this;
-          m.classList.toggle('hidden');
-          btn.setAttribute('aria-expanded', m.classList.contains('hidden') ? 'false' : 'true');
-        ">
-        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </div>
-
-    <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
-      <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
+  <!-- ================= HEADER (CANONICAL) ================= -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">FORGE <span>GTM</span></div>
+      <nav>
         <a href="index.html">Home</a>
-        <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
+        <a href="signalgate.html" class="active">SignalGate</a>
         <a href="method.html">Method</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="rso.html">RSO</a>
         <a href="systems.html">Systems</a>
         <a href="about.html">About Don</a>
         <a href="work-with-us.html">Work With Us</a>
       </nav>
+      <a href="work-with-us.html" class="cta">Book a working session</a>
     </div>
   </header>
 
-  <!-- ========================= -->
-  <!-- MAIN CONTENT              -->
-  <!-- ========================= -->
-  <main class="flex-1">
-
-    <!-- HERO -->
-    <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900">
-      <div class="mx-auto forge-container px-4 py-14">
-        <p class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300">SignalGate</p>
-        <h1 class="mt-4 text-3xl sm:text-4xl font-semibold">
-          A hard gate on account pursuit — before momentum sets in.
-        </h1>
-        <p class="mt-6 max-w-2xl text-base text-slate-300">
-          SignalGate exists to answer one question before time, money, and credibility are committed:
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">RSO & OUTBOUND ENGINE CONSULTANCY</p>
+        <h1>SignalGate</h1>
+        <p class="lead">
+          SignalGate exists to answer a single question:
+          <strong>Is this account rational to pursue?</strong>
         </p>
-        <p class="mt-4 text-lg font-semibold text-slate-100">
-          Is this account rational to pursue at all?
+        <p class="lead emphasis">
+          Before strategy. Before execution. Before credibility is spent.
         </p>
       </div>
-    </section>
+      <div class="hero-visual">
+        <img src="assets/images/forge-emblem.png" alt="Forge GTM Emblem">
+      </div>
+    </div>
+  </section>
 
-    <!-- BODY -->
-    <section class="bg-slate-950 border-b border-slate-800">
-      <div class="mx-auto forge-container px-4 py-14 grid gap-8 md:grid-cols-2">
+  <!-- ================= CORE DEFINITION ================= -->
+  <section class="section">
+    <div class="container narrow">
+      <h2>What SignalGate Is</h2>
+      <p>
+        SignalGate is the admissibility gate for the Forge GTM system.
+        Its role is not to improve outcomes — but to prevent irrational bets.
+      </p>
+      <ul class="clean-list">
+        <li>• Binary account admissibility: <strong>PURSUE</strong> or <strong>PASS</strong></li>
+        <li>• Based solely on publicly observable signals</li>
+        <li>• Independent of access, execution quality, or persuasion skill</li>
+        <li>• Produces a defensible record of knowns and explicit unknowns</li>
+      </ul>
+    </div>
+  </section>
 
-        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
-          <h2 class="text-lg font-semibold">What SignalGate Does</h2>
-          <ul class="mt-4 space-y-2 text-sm text-slate-300">
-            <li>• Evaluates publicly observable signals tied to operational reality</li>
-            <li>• Records evidence with explicit unknowns</li>
-            <li>• Issues a clear pursue/pass disposition</li>
+  <!-- ================= WHAT IT IS NOT ================= -->
+  <section class="section subtle">
+    <div class="container narrow">
+      <h2>What SignalGate Is Not</h2>
+      <p>
+        SignalGate deliberately excludes anything that would contaminate judgment.
+      </p>
+      <ul class="clean-list muted">
+        <li>• No strategy</li>
+        <li>• No recommendations</li>
+        <li>• No execution advice</li>
+        <li>• No sales narrative or positioning language</li>
+        <li>• No follow-ups, contingencies, or “maybes”</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= OUTPUT ================= -->
+  <section class="section">
+    <div class="container narrow">
+      <h2>SignalGate Output</h2>
+      <p>
+        SignalGate produces a single, final determination.
+      </p>
+      <div class="decision-box">
+        <div class="decision pursue">PURSUE</div>
+        <div class="decision pass">PASS</div>
+      </div>
+      <p class="note">
+        There are no intermediate states.  
+        Discovery does not equal decision.  
+        Ambiguity defaults to <strong>PASS</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= RSO ENGINE CONTEXT ================= -->
+  <section class="section subtle">
+    <div class="container">
+      <h2>The RSO Engine</h2>
+      <p>
+        SignalGate is the first hard boundary inside the RSO Engine —
+        the operating system that governs research, outbound, and leadership decisions.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>SignalGate</h3>
+          <ul>
+            <li>• Account admissibility</li>
+            <li>• Public evidence only</li>
+            <li>• Explicit unknowns logged</li>
+            <li>• No strategy. No execution.</li>
           </ul>
         </div>
 
-        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
-          <h2 class="text-lg font-semibold">What SignalGate Does Not Do</h2>
-          <ul class="mt-4 space-y-2 text-sm text-slate-300">
-            <li>• Does not recommend next steps</li>
-            <li>• Does not produce strategy or narrative</li>
-            <li>• Does not trigger deeper work</li>
-            <li>• Does not imply further engagement</li>
+        <div class="card">
+          <h3>Module One</h3>
+          <ul>
+            <li>• Operational reality and constraints</li>
+            <li>• Leadership psychology and authority map</li>
+            <li>• Leakage, friction, and structural limits</li>
+            <li>• Defensible record of known vs unknown</li>
           </ul>
         </div>
 
+        <div class="card">
+          <h3>RSO</h3>
+          <ul>
+            <li>• Execution artifact produced after Module One</li>
+            <li>• Evidence-led narrative for serious buyers</li>
+            <li>• Tied to operational reality, not aspiration</li>
+            <li>• Never sold independently</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Outbound & Command</h3>
+          <ul>
+            <li>• Penetration paths and operating rhythm</li>
+            <li>• Scoreboards, breakpoints, guardrails</li>
+            <li>• Engine survives after transfer</li>
+            <li>• Operator-led judgment preserved</li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- TRANSITION -->
-    <section class="bg-slate-950">
-      <div class="mx-auto forge-container px-4 py-14">
-        <p class="max-w-3xl text-base text-slate-300">
-          <span class="text-slate-100 font-semibold">If SignalGate returns PURSUE,</span>
-          the next question is no longer “should we chase this?”
-          It becomes “do we understand reality well enough to commit?”
-        </p>
-        <p class="mt-4 text-sm text-slate-400">
-          That is a different decision — and a different product.
-        </p>
-      </div>
-    </section>
+  <!-- ================= GATING RULES ================= -->
+  <section class="section">
+    <div class="container narrow">
+      <h2>Gating Rules</h2>
+      <ul class="clean-list">
+        <li>• Module One cannot be engaged without passing SignalGate</li>
+        <li>• RSO cannot exist without Module One</li>
+        <li>• SignalGate is never bundled</li>
+        <li>• Passing SignalGate does not imply success — only rationality</li>
+      </ul>
+    </div>
+  </section>
 
-  </main>
+  <!-- ================= CTA ================= -->
+  <section class="section cta-band">
+    <div class="container cta-row">
+      <a href="pricing.html" class="btn primary">See pricing</a>
+      <a href="work-with-us.html" class="btn secondary">Start with SignalGate</a>
+    </div>
+  </section>
 
-  <!-- ========================= -->
-  <!-- FOOTER (RESTORED)         -->
-  <!-- ========================= -->
-  <footer class="border-t border-slate-800 bg-slate-950">
-    <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
-      © <span id="year"></span> FORGE GTM. All rights reserved.
+  <!-- ================= FOOTER (CANONICAL) ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Forge GTM. All rights reserved.</p>
     </div>
   </footer>
 
-</div>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
