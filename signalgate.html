@@ -1,189 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="/FORGE-GTM/">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png">
+  <link rel="apple-touch-icon" href="forge-favicon-180.png">
+
+  <meta charset="utf-8" />
   <title>SignalGate — Forge GTM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- CANONICAL HEAD (MATCHES INDEX.HTML) -->
-  <link rel="stylesheet" href="./assets/css/main.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="icon" href="./assets/images/favicon.ico">
+  <style>
+    .forge-container { max-width: 1120px; }
+    html { overflow-y: scroll; }
+  </style>
 </head>
 
-<body class="dark">
+<body class="bg-slate-950 text-slate-50 antialiased">
+<div class="min-h-screen flex flex-col">
 
-  <!-- HEADER (CANONICAL) -->
-  <header class="site-header">
-    <div class="container nav">
-      <div class="logo">FORGE <span>GTM</span></div>
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./signalgate.html" class="active">SignalGate</a>
-        <a href="./method.html">Method</a>
-        <a href="./pricing.html">Pricing</a>
-        <a href="./rso.html">RSO</a>
-        <a href="./systems.html">Systems</a>
-        <a href="./about.html">About Don</a>
-        <a href="./work-with-us.html">Work With Us</a>
-      </nav>
-      <a href="./work-with-us.html" class="cta">Book a working session</a>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">RSO & OUTBOUND ENGINE CONSULTANCY</p>
-        <h1>SignalGate</h1>
-        <p class="lead">
-          SignalGate exists to answer a single question:
-          <strong>Is this account rational to pursue?</strong>
-        </p>
-        <p class="lead emphasis">
-          Before strategy. Before execution. Before credibility is spent.
-        </p>
+<!-- HEADER (UNCHANGED) -->
+<header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
+      <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
+        FORGE <span class="text-amber-400">GTM</span>
       </div>
-      <div class="hero-visual">
-        <img src="./assets/images/forge-emblem.png" alt="Forge GTM Emblem">
-      </div>
-    </div>
-  </section>
+    </a>
 
-  <!-- WHAT SIGNALGATE IS -->
-  <section class="section">
-    <div class="container narrow">
-      <h2>What SignalGate Is</h2>
-      <p>
-        SignalGate is the admissibility gate for the Forge GTM system.
-        Its role is not to improve outcomes — but to prevent irrational bets.
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+      <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
+      <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
+      <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
+      <a href="pricing.html" class="text-slate-300 hover:text-amber-300">Pricing</a>
+      <a href="rso.html" class="text-slate-300 hover:text-amber-300">RSO</a>
+      <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
+      <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
+      <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
+    </nav>
+
+    <div class="hidden md:flex min-w-[180px] justify-end">
+      <a href="work-with-us.html"
+         class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
+        Book a working session
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800 py-24">
+  <div class="mx-auto forge-container px-4 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+
+    <div class="flex justify-center md:justify-start">
+      <img src="forge-gtm.png" alt="Forge GTM Panel Logo" class="max-w-full shadow-2xl rounded-xl">
+    </div>
+
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">
+        RSO & OUTBOUND ENGINE CONSULTANCY
       </p>
-      <ul class="clean-list">
-        <li>• Binary account admissibility: <strong>PURSUE</strong> or <strong>PASS</strong></li>
-        <li>• Based solely on publicly observable signals</li>
-        <li>• Independent of access, execution quality, or persuasion skill</li>
-        <li>• Produces a defensible record of knowns and explicit unknowns</li>
+
+      <h1 class="mt-6 text-4xl sm:text-5xl font-bold leading-tight">
+        SignalGate
+      </h1>
+
+      <p class="mt-6 text-base text-slate-300 leading-relaxed max-w-md">
+        SignalGate determines whether an account is <span class="text-slate-50 font-semibold">rational to pursue</span>
+        before time, money, and credibility are committed.
+      </p>
+
+      <p class="mt-4 text-base text-amber-300 leading-relaxed max-w-md">
+        Public signals only. No narrative. No execution bias.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- DEFINITION -->
+<section class="bg-slate-950 py-20 border-b border-slate-800">
+  <div class="mx-auto forge-container px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+
+    <div>
+      <h2 class="text-xl font-semibold mb-4">What SignalGate Is</h2>
+      <ul class="space-y-2 text-sm text-slate-300">
+        <li>• Binary account admissibility: <span class="text-slate-50 font-semibold">PURSUE or PASS</span></li>
+        <li>• Publicly observable evidence only</li>
+        <li>• Explicit documentation of knowns and unknowns</li>
+        <li>• Independent of access or execution quality</li>
       </ul>
     </div>
-  </section>
 
-  <!-- WHAT SIGNALGATE IS NOT -->
-  <section class="section subtle">
-    <div class="container narrow">
-      <h2>What SignalGate Is Not</h2>
-      <p>
-        SignalGate deliberately excludes anything that would contaminate judgment.
-      </p>
-      <ul class="clean-list muted">
+    <div>
+      <h2 class="text-xl font-semibold mb-4">What SignalGate Is Not</h2>
+      <ul class="space-y-2 text-sm text-slate-300">
         <li>• No strategy</li>
         <li>• No recommendations</li>
-        <li>• No execution advice</li>
-        <li>• No sales narrative or positioning language</li>
-        <li>• No follow-ups, contingencies, or “maybes”</li>
+        <li>• No execution guidance</li>
+        <li>• No sales narrative</li>
+        <li>• No follow-ups or “maybes”</li>
       </ul>
     </div>
-  </section>
 
-  <!-- OUTPUT -->
-  <section class="section">
-    <div class="container narrow">
-      <h2>SignalGate Output</h2>
-      <p>
-        SignalGate produces a single, final determination.
-      </p>
-      <div class="decision-box">
-        <div class="decision pursue">PURSUE</div>
-        <div class="decision pass">PASS</div>
+  </div>
+</section>
+
+<!-- OUTPUT -->
+<section class="bg-slate-950 py-20 border-b border-slate-800">
+  <div class="mx-auto forge-container px-4 text-center">
+
+    <h2 class="text-xl font-semibold mb-6">SignalGate Output</h2>
+
+    <div class="flex justify-center gap-6 mb-6">
+      <div class="rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-8 py-4 text-lg font-semibold text-emerald-400">
+        PURSUE
       </div>
-      <p class="note">
-        There are no intermediate states.  
-        Discovery does not equal decision.  
-        Ambiguity defaults to <strong>PASS</strong>.
-      </p>
-    </div>
-  </section>
-
-  <!-- RSO ENGINE -->
-  <section class="section subtle">
-    <div class="container">
-      <h2>The RSO Engine</h2>
-      <p>
-        SignalGate is the first hard boundary inside the RSO Engine —
-        the operating system governing research, outbound, and leadership decisions.
-      </p>
-
-      <div class="grid-2">
-        <div class="card">
-          <h3>SignalGate</h3>
-          <ul>
-            <li>• Account admissibility: PURSUE or PASS</li>
-            <li>• Public evidence and explicit unknowns</li>
-            <li>• No strategy. No recommendations.</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Module One</h3>
-          <ul>
-            <li>• Operational reality, constraints, leakage</li>
-            <li>• Leadership psychology and authority map</li>
-            <li>• Defensible record of known/unknown</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>RSO</h3>
-          <ul>
-            <li>• Execution artifact after Module One</li>
-            <li>• Evidence-led narrative for serious buyers</li>
-            <li>• Not sold independently</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Outbound & Command</h3>
-          <ul>
-            <li>• Penetration paths and operating rhythm</li>
-            <li>• Scoreboards, breakpoints, guardrails</li>
-            <li>• Engine survives after transfer</li>
-          </ul>
-        </div>
+      <div class="rounded-xl border border-rose-500/40 bg-rose-500/10 px-8 py-4 text-lg font-semibold text-rose-400">
+        PASS
       </div>
     </div>
-  </section>
 
-  <!-- GATING RULES -->
-  <section class="section">
-    <div class="container narrow">
-      <h2>Gating Rules</h2>
-      <ul class="clean-list">
-        <li>• Module One cannot be engaged without passing SignalGate</li>
-        <li>• RSO cannot exist without Module One</li>
-        <li>• SignalGate is never bundled</li>
-        <li>• Passing SignalGate implies rationality, not success</li>
-      </ul>
-    </div>
-  </section>
+    <p class="text-sm text-slate-400 max-w-xl mx-auto">
+      No intermediate states. Discovery does not equal decision.
+      Ambiguity defaults to <span class="text-slate-50 font-semibold">PASS</span>.
+    </p>
 
-  <!-- CTA -->
-  <section class="section cta-band">
-    <div class="container cta-row">
-      <a href="./pricing.html" class="btn primary">See pricing</a>
-      <a href="./work-with-us.html" class="btn secondary">Start with SignalGate</a>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER (CANONICAL) -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2025 Forge GTM. All rights reserved.</p>
+<!-- CTA -->
+<section class="bg-slate-950 py-20">
+  <div class="mx-auto forge-container px-4 text-center">
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="pricing.html"
+         class="inline-flex items-center rounded-full bg-amber-400 px-8 py-4 text-sm font-semibold text-slate-950 shadow-md hover:bg-amber-300 transition-colors">
+        See pricing
+      </a>
+      <a href="work-with-us.html"
+         class="inline-flex items-center rounded-full border border-slate-600 px-8 py-4 text-sm font-semibold text-slate-100 hover:bg-slate-800 transition-colors">
+        Start with SignalGate
+      </a>
     </div>
-  </footer>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-slate-800 bg-slate-950">
+  <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
+    © <span id="year"></span> FORGE GTM. All rights reserved.
+  </div>
+</footer>
+
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
