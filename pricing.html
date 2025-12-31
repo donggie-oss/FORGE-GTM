@@ -1,270 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Pricing — Forge GTM</title>
+  <base href="/FORGE-GTM/">
 
-<style>
-/* =========================
-   RESET / BASE
-========================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="forge-favicon-48.png">
+  <link rel="apple-touch-icon" href="forge-favicon-180.png">
 
-html, body {
-  background: radial-gradient(1200px 600px at 20% 0%, #0b1220 0%, #050914 60%);
-  color: #e5e7eb;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Inter, Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-}
+  <meta charset="utf-8" />
+  <title>Pricing — Forge GTM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-/* =========================
-   NAV (MATCH METHOD)
-========================= */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: linear-gradient(to bottom, rgba(6,10,22,0.95), rgba(6,10,22,0.85));
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 18px 28px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand {
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  font-size: 14px;
-}
-
-.brand span {
-  color: #fbbf24;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 26px;
-  align-items: center;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 14px;
-  color: #cbd5f5;
-  transition: color 0.2s ease;
-}
-
-nav a:hover {
-  color: #ffffff;
-}
-
-nav a.active {
-  color: #fbbf24;
-}
-
-.cta {
-  margin-left: 28px;
-  padding: 10px 18px;
-  background: #fbbf24;
-  color: #0b1220;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-/* =========================
-   HERO (MATCH METHOD)
-========================= */
-.hero {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 96px 28px 72px;
-}
-
-.kicker {
-  font-size: 12px;
-  letter-spacing: 0.22em;
-  color: #fbbf24;
-  margin-bottom: 18px;
-}
-
-h1 {
-  font-size: 44px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 18px;
-  color: #ffffff;
-}
-
-.hero p {
-  max-width: 720px;
-  font-size: 16px;
-  color: #cbd5f5;
-}
-
-/* =========================
-   PRICING CARDS
-========================= */
-.section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 48px 28px 96px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
-
-.card {
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,0.06),
-    rgba(255,255,255,0.02)
-  );
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 14px;
-  padding: 28px;
-}
-
-.card.highlight {
-  border-color: rgba(251,191,36,0.6);
-}
-
-.card h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
-  color: #ffffff;
-}
-
-.price {
-  font-size: 26px;
-  font-weight: 700;
-  color: #fbbf24;
-  margin-bottom: 14px;
-}
-
-.card ul {
-  list-style: disc;
-  padding-left: 18px;
-  color: #cbd5f5;
-  font-size: 14px;
-}
-
-.card li {
-  margin-bottom: 8px;
-}
-
-.note {
-  margin-top: 14px;
-  font-size: 12px;
-  color: #9ca3af;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  border-top: 1px solid rgba(255,255,255,0.06);
-  padding: 28px;
-  text-align: center;
-  font-size: 12px;
-  color: #9ca3af;
-}
-</style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .forge-container { max-width: 1120px; }
+    html { overflow-y: scroll; }
+  </style>
 </head>
 
-<body>
+<body class="bg-slate-950 text-slate-50 antialiased">
+  <div class="min-h-screen flex flex-col">
 
-<header>
-  <div class="nav-container">
-    <div class="brand">FORGE <span>GTM</span></div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="signalgate.html">SignalGate</a></li>
-        <li><a href="method.html">Method</a></li>
-        <li><a class="active" href="pricing.html">Pricing</a></li>
-        <li><a href="rso.html">RSO</a></li>
-        <li><a href="systems.html">Systems</a></li>
-        <li><a href="about.html">About Don</a></li>
-        <li><a href="work.html">Work With Us</a></li>
-      </ul>
-    </nav>
-    <a class="cta" href="#">Book a working session</a>
-  </div>
-</header>
+    <!-- HEADER (CANONICAL / NO DANCING) -->
+    <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
+          <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
+            FORGE <span class="text-amber-400">GTM</span>
+          </div>
+        </a>
 
-<section class="hero">
-  <div class="kicker">PRICING</div>
-  <h1>Pricing enforces order.</h1>
-  <p>
-    Forge GTM is a sequenced decision system. You don’t buy pieces out of order.
-    Pricing exists to prevent execution on false assumptions.
-  </p>
-</section>
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
+          <a href="signalgate.html" class="text-slate-300 hover:text-amber-300">SignalGate</a>
+          <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
+          <a href="pricing.html" class="text-amber-400 font-semibold">Pricing</a>
+          <a href="rso.html" class="text-slate-300 hover:text-amber-300">RSO</a>
+          <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
+          <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
+          <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
+        </nav>
 
-<section class="section">
-  <div class="cards">
-    <div class="card">
-      <h3>SignalGate</h3>
-      <div class="price">$1,000</div>
-      <ul>
-        <li>Binary account admissibility: PURSUE or PASS</li>
-        <li>Publicly observable signals only</li>
-        <li>Explicit knowns and unknowns</li>
-        <li>No strategy or recommendations</li>
-      </ul>
-      <div class="note">
-        If PASS, the engagement ends cleanly.
+        <div class="hidden md:flex min-w-[180px] justify-end">
+          <a href="work-with-us.html"
+             class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
+            Book a working session
+          </a>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <button type="button"
+          class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
+          aria-controls="mobile-nav" aria-expanded="false"
+          onclick="const m=document.getElementById('mobile-nav'); const btn=this; m.classList.toggle('hidden'); btn.setAttribute('aria-expanded', m.classList.contains('hidden') ? 'false' : 'true');">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
       </div>
-    </div>
 
-    <div class="card highlight">
-      <h3>Module One</h3>
-      <div class="price">$3,500</div>
-      <ul>
-        <li>Operational reality & constraint mapping</li>
-        <li>Leadership psychology & authority</li>
-        <li>Leakage points, margins, non-negotiables</li>
-        <li>Cannot be skipped</li>
-      </ul>
-      <div class="note">
-        This is intentionally the most demanding stage.
+      <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
+        <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
+          <a href="index.html">Home</a>
+          <a href="signalgate.html">SignalGate</a>
+          <a href="method.html">Method</a>
+          <a href="pricing.html" class="text-amber-400 font-semibold">Pricing</a>
+          <a href="rso.html">RSO</a>
+          <a href="systems.html">Systems</a>
+          <a href="about.html">About Don</a>
+          <a href="work-with-us.html">Work With Us</a>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div class="card">
-      <h3>Recommended Solution Overview (RSO)</h3>
-      <div class="price">$2,500</div>
-      <ul>
-        <li>Execution artifact only</li>
-        <li>Externalizes verified understanding</li>
-        <li>No discovery or validation</li>
-        <li>Produced only after Module One</li>
-      </ul>
-    </div>
+    <!-- MAIN -->
+    <main class="flex-1">
+
+      <!-- HERO (MATCH METHOD) -->
+      <section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-20">
+          <p class="text-xs font-semibold uppercase tracking-[0.30em] text-amber-300">
+            PRICING
+          </p>
+
+          <div class="mt-6 max-w-3xl">
+            <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+              Pricing enforces order.
+            </h1>
+
+            <p class="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed">
+              Forge GTM is a sequenced decision system. You don’t buy pieces out of order.
+              Pricing exists to prevent execution on false assumptions.
+            </p>
+
+            <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
+              Engagements proceed only after upstream gates are satisfied.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING CARDS -->
+      <section class="bg-slate-950 py-14 border-b border-slate-800">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
+          <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-8 shadow-xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-sm">
+
+              <!-- SignalGate -->
+              <div class="rounded-xl border border-slate-700 bg-slate-800/40 p-6">
+                <div class="text-lg font-semibold text-slate-50">SignalGate</div>
+                <div class="mt-1 text-sm text-slate-400">Account admissibility</div>
+
+                <div class="mt-4 text-2xl font-bold text-amber-300">$1,000</div>
+
+                <ul class="mt-5 space-y-2 text-slate-300">
+                  <li>• Evaluates publicly observable signals</li>
+                  <li>• Records evidence and explicit unknowns</li>
+                  <li>• Returns a clear PURSUE or PASS</li>
+                </ul>
+
+                <p class="mt-5 text-xs text-slate-400 leading-relaxed">
+                  No strategy. No recommendations. No credit toward other work.
+                  If PASS, the engagement ends cleanly.
+                </p>
+              </div>
+
+              <!-- Module One (highlight) -->
+              <div class="rounded-xl border border-amber-400/50 bg-slate-800/40 p-6 shadow-[0_0_0_1px_rgba(251,191,36,0.25)]">
+                <div class="text-lg font-semibold text-slate-50">Module One</div>
+                <div class="mt-1 text-sm text-slate-400">Required operational gate</div>
+
+                <div class="mt-4 text-2xl font-bold text-amber-300">$3,500</div>
+
+                <ul class="mt-5 space-y-2 text-slate-300">
+                  <li>• Leadership psychology &amp; decision authority</li>
+                  <li>• Operational constraints and leakage points</li>
+                  <li>• Margin pools, risk zones, non-negotiables</li>
+                  <li>• Explicit unknowns surfaced and recorded</li>
+                </ul>
+
+                <p class="mt-5 text-xs text-slate-400 leading-relaxed">
+                  This stage cannot be skipped. It carries real accountability and is
+                  intentionally the most demanding engagement.
+                </p>
+              </div>
+
+              <!-- RSO -->
+              <div class="rounded-xl border border-slate-700 bg-slate-800/40 p-6">
+                <div class="text-lg font-semibold text-slate-50">Recommended Solution Overview (RSO)</div>
+                <div class="mt-1 text-sm text-slate-400">Execution artifact</div>
+
+                <div class="mt-4 text-2xl font-bold text-slate-200">$2,500</div>
+
+                <ul class="mt-5 space-y-2 text-slate-300">
+                  <li>• Externalizes verified understanding</li>
+                  <li>• Operator-grade, evidence-led narrative</li>
+                  <li>• Designed for execution, not discovery</li>
+                </ul>
+
+                <p class="mt-5 text-xs text-slate-400 leading-relaxed">
+                  RSOs are available only after Module One. They are not sold independently.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY YOU CAN'T BUY RSO -->
+      <section class="bg-slate-950 py-14 border-b border-slate-800">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
+          <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-8 shadow-xl">
+            <h2 class="text-lg font-semibold mb-4">Why you can’t buy an RSO yet</h2>
+
+            <p class="text-sm text-slate-300 max-w-3xl">
+              Most GTM failures don’t come from poor execution. They come from confident execution
+              on false assumptions. An RSO is not a discovery product — it is the externalized
+              output of verified understanding.
+            </p>
+
+            <p class="mt-4 text-sm text-slate-300 max-w-3xl">
+              The sequence is the product: SignalGate → Module One → RSO. Pricing exists to
+              enforce that order.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="bg-slate-950 py-14">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
+          <div class="rounded-2xl bg-slate-900/40 border border-slate-700 p-8 text-center">
+            <div class="flex flex-wrap justify-center gap-4">
+              <a href="signalgate.html"
+                 class="inline-flex items-center rounded-full border border-slate-600 px-8 py-4 text-sm font-semibold text-slate-100 hover:bg-slate-800 transition-colors">
+                Start with SignalGate
+              </a>
+
+              <a href="work-with-us.html"
+                 class="inline-flex items-center rounded-full bg-amber-400 px-8 py-4 text-sm font-semibold text-slate-950 shadow-md hover:bg-amber-300 transition-colors">
+                Book a working session
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
+        © <span id="year"></span> FORGE GTM. All rights reserved.
+      </div>
+    </footer>
+
   </div>
-</section>
 
-<footer>
-  © 2025 Forge GTM. All rights reserved.
-</footer>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
