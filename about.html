@@ -3,150 +3,41 @@
 <head>
   <base href="/FORGE-GTM/">
 
+  <!-- FAVICONS -->
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png" />
   <link rel="apple-touch-icon" href="forge-favicon-180.png" />
 
+  <!-- META -->
   <meta charset="utf-8" />
   <title>Forge GTM — About Don</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- SEO / Social -->
+  <meta name="description" content="Don Florencio builds disciplined GTM and outbound systems that survive real-world constraints across US and APAC.">
+  <meta property="og:title" content="Forge GTM — About Don">
+  <meta property="og:description" content="30+ years of turning stalled territories into disciplined GTM engines.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://donggie-oss.github.io/FORGE-GTM/about.html">
+  <meta property="og:image" content="https://donggie-oss.github.io/FORGE-GTM/assets/forge-share.png">
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- BASE STYLES -->
   <style>
-    /* Reset & Base */
-    *, ::before, ::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    html {
-      overflow-y: scroll;
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-    body {
-      background-color: #020617; /* slate-950 */
-      color: #f8fafc; /* slate-50 */
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    /* Layout */
-    .forge-container {
-      max-width: 1120px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .flex { display: flex; }
-    .flex-col { flex-direction: column; }
-    .items-center { align-items: center; }
-    .justify-between { justify-content: space-between; }
-    .gap-3 { gap: 0.75rem; }
-    .gap-7 { gap: 1.75rem; }
-    .min-h-screen { min-height: 100vh; }
-    .flex-1 { flex: 1 1 0%; }
-
-    /* Typography */
-    .text-xs { font-size: 0.75rem; line-height: 1rem; }
-    .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
-    .text-base { font-size: 1rem; line-height: 1.5rem; }
-    .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
-    .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
-    .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
-    .font-semibold { font-weight: 600; }
-    .font-bold { font-weight: 700; }
-    .uppercase { text-transform: uppercase; }
-    .tracking-\[0\.16em\] { letter-spacing: 0.16em; }
-    .tracking-\[0\.25em\] { letter-spacing: 0.25em; }
-    .leading-tight { line-height: 1.25; }
-
-    /* Colors */
-    .text-slate-50 { color: #f8fafc; }
-    .text-slate-100 { color: #f1f5f9; }
-    .text-slate-200 { color: #e2e8f0; }
-    .text-slate-300 { color: #cbd5e1; }
-    .text-slate-400 { color: #94a3b8; }
-    .text-slate-500 { color: #64748b; }
-    .text-amber-300 { color: #fcd34d; }
-    .text-amber-400 { color: #f59e0b; }
-    .bg-slate-950 { background-color: #020617; }
-    .bg-slate-900 { background-color: #0f172a; }
-    .bg-slate-900\/70 { background-color: rgba(15, 23, 42, 0.7); }
-    .border-slate-700 { border-color: #334155; }
-    .border-slate-800 { border-color: #1e293b; }
-
-    /* Spacing */
-    .h-16 { height: 4rem; }
-    .h-6 { height: 1.5rem; }
-    .w-6 { width: 1.5rem; }
-    .p-2 { padding: 0.5rem; }
-    .p-5 { padding: 1.25rem; }
-    .px-4 { padding-left: 1rem; padding-right: 1rem; }
-    .px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
-    .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
-    .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
-    .py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
-    .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
-    .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
-    .mt-2 { margin-top: 0.5rem; }
-    .mt-3 { margin-top: 0.75rem; }
-    .mt-4 { margin-top: 1rem; }
-
-    /* Radius & Borders */
-    .rounded-full { border-radius: 9999px; }
-    .rounded-2xl { border-radius: 1rem; }
-    .border { border-width: 1px; }
-    .border-b { border-bottom-width: 1px; }
-
-    /* Shadows & Effects */
-    .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); }
-    .shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
-
-    /* Links & Hover */
-    a.text-slate-300 {
-      color: #cbd5e1;
-      text-decoration: none;
-    }
-    a.text-slate-300:hover {
-      color: #fcd34d; /* amber-300 */
-    }
-    a.text-amber-400 {
-      color: #f59e0b;
-      font-weight: 600;
-    }
-
-    /* Responsive */
-    @media (min-width: 640px) {
-      .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-      .sm\:py-16 { padding-top: 4rem; padding-bottom: 4rem; }
-      .sm\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
-    }
-    @media (min-width: 768px) {
-      .md\:hidden { display: none; }
-      .md\:flex { display: flex; }
-    }
-    @media (min-width: 1024px) {
-      .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
-      .lg\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,1fr\)\] {
-        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-      }
-    }
-
-    /* Mobile Nav */
-    #mobile-nav {
-      display: none;
-    }
-    #mobile-nav:not(.hidden) {
-      display: block;
-    }
+    .forge-container { max-width: 1120px; }
+    html { overflow-y: scroll; }
   </style>
 </head>
 
-<body>
+<body class="bg-slate-950 text-slate-50 antialiased">
   <div class="min-h-screen flex flex-col">
 
-    <!-- HEADER -->
-    <header class="border-b border-slate-800 bg-slate-950">
-      <div class="px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
+    <!-- HEADER (CANONICAL) -->
+    <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
         <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
           <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
             FORGE <span class="text-amber-400">GTM</span>
@@ -157,6 +48,8 @@
           <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
           <a href="signalgate.html" class="text-slate-300 hover:text-amber-300">SignalGate</a>
           <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
+          <a href="pricing.html" class="text-slate-300 hover:text-amber-300">Pricing</a>
+          <a href="rso.html" class="text-slate-300 hover:text-amber-300">RSO</a>
           <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
           <a href="about.html" class="text-amber-400 font-semibold">About Don</a>
           <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
@@ -164,16 +57,16 @@
 
         <div class="hidden md:flex min-w-[180px] justify-end">
           <a href="work-with-us.html"
-             class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300">
+             class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
             Book a working session
           </a>
         </div>
 
-        <!-- MOBILE MENU BUTTON -->
+        <!-- MOBILE MENU -->
         <button type="button"
           class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
           aria-controls="mobile-nav" aria-expanded="false"
-          onclick="const m=document.getElementById('mobile-nav'); m.classList.toggle('hidden'); this.setAttribute('aria-expanded', m.classList.contains('hidden') ? 'false' : 'true');">
+          onclick="const m=document.getElementById('mobile-nav'); const btn=this; m.classList.toggle('hidden'); btn.setAttribute('aria-expanded', m.classList.contains('hidden') ? 'false' : 'true');">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
@@ -181,21 +74,27 @@
       </div>
 
       <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
-        <nav class="px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
+        <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
           <a href="index.html">Home</a>
           <a href="signalgate.html">SignalGate</a>
           <a href="method.html">Method</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="rso.html">RSO</a>
           <a href="systems.html">Systems</a>
           <a href="about.html" class="text-amber-400 font-semibold">About Don</a>
           <a href="work-with-us.html">Work With Us</a>
+          <a href="work-with-us.html"
+             class="mt-2 inline-flex items-center justify-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
+            Book a working session
+          </a>
         </nav>
       </div>
     </header>
 
-    <!-- MAIN -->
+    <!-- MAIN CONTENT -->
     <main class="flex-1">
       <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900">
-        <div class="px-4 sm:px-6 lg:px-8 forge-container py-12 sm:py-16 grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-start">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-12 sm:py-16 grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-start">
           <div>
             <p class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300">About Don</p>
             <h1 class="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">
@@ -214,11 +113,13 @@
               execution — not just another slide deck.
             </p>
           </div>
-          <div class="flex flex-col items-center">
+
+          <!-- HEADSHOT BLOCK: nudged right on desktop -->
+          <div class="flex flex-col items-center lg:items-end lg:justify-self-end lg:pr-6">
             <div class="h-40 w-40 rounded-full overflow-hidden border border-slate-700 shadow-xl shadow-black/40 bg-slate-900 mb-4">
               <img src="assets/headshot.jpg" alt="Don Florencio" class="h-full w-full object-cover" />
             </div>
-            <div class="text-center text-xs text-slate-300">
+            <div class="text-center lg:text-right text-xs text-slate-300">
               <div class="font-semibold">Don Florencio</div>
               <div>GTM Architecture &amp; Outbound Systems</div>
             </div>
@@ -227,7 +128,7 @@
       </section>
 
       <section class="bg-slate-950">
-        <div class="px-4 sm:px-6 lg:px-8 forge-container py-12 sm:py-16 grid gap-8 md:grid-cols-2 text-sm">
+        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-12 sm:py-16 grid gap-8 md:grid-cols-2 text-sm">
           <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
             <p class="text-xs font-semibold tracking-[0.22em] uppercase text-slate-400 mb-2">Background at a glance</p>
             <ul class="space-y-1.5 text-[0.8rem] text-slate-300">
@@ -237,6 +138,7 @@
               <li>• Strong bias toward documentation, discipline, and survivable systems.</li>
             </ul>
           </div>
+
           <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 flex flex-col justify-between">
             <div>
               <p class="text-xs font-semibold tracking-[0.22em] uppercase text-slate-400 mb-2">How Don works with teams</p>
@@ -257,7 +159,7 @@
 
     <!-- FOOTER -->
     <footer class="border-t border-slate-800 bg-slate-950">
-      <div class="px-4 py-6 forge-container text-[11px] text-slate-500">
+      <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
         © <span id="year"></span> FORGE GTM. All rights reserved.
       </div>
     </footer>
