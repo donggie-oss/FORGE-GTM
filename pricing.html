@@ -1,111 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing | Forge GTM</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pricing — Forge GTM</title>
 
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" href="assets/favicon.ico" />
+<style>
+/* =========================
+   RESET / BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: radial-gradient(1200px 600px at 20% 0%, #0b1220 0%, #050914 60%);
+  color: #e5e7eb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Inter, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAV (MATCH METHOD)
+========================= */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to bottom, rgba(6,10,22,0.95), rgba(6,10,22,0.85));
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  font-size: 14px;
+}
+
+.brand span {
+  color: #fbbf24;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #cbd5f5;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav a.active {
+  color: #fbbf24;
+}
+
+.cta {
+  margin-left: 28px;
+  padding: 10px 18px;
+  background: #fbbf24;
+  color: #0b1220;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* =========================
+   HERO (MATCH METHOD)
+========================= */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 96px 28px 72px;
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  color: #fbbf24;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.hero p {
+  max-width: 720px;
+  font-size: 16px;
+  color: #cbd5f5;
+}
+
+/* =========================
+   PRICING CARDS
+========================= */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 28px 96px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.card.highlight {
+  border-color: rgba(251,191,36,0.6);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fbbf24;
+  margin-bottom: 14px;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 18px;
+  color: #cbd5f5;
+  font-size: 14px;
+}
+
+.card li {
+  margin-bottom: 8px;
+}
+
+.note {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 28px;
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+}
+</style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="site-header">
+<header>
   <div class="nav-container">
-    <div class="logo">
-      <span class="forge">FORGE</span> <span class="gtm">GTM</span>
-    </div>
-
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="signalgate.html">SignalGate</a>
-      <a href="method.html">Method</a>
-      <a href="pricing.html" class="active">Pricing</a>
-      <a href="rso.html">RSO</a>
-      <a href="systems.html">Systems</a>
-      <a href="about.html">About Don</a>
-      <a href="work-with-us.html">Work With Us</a>
+    <div class="brand">FORGE <span>GTM</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signalgate.html">SignalGate</a></li>
+        <li><a href="method.html">Method</a></li>
+        <li><a class="active" href="pricing.html">Pricing</a></li>
+        <li><a href="rso.html">RSO</a></li>
+        <li><a href="systems.html">Systems</a></li>
+        <li><a href="about.html">About Don</a></li>
+        <li><a href="work.html">Work With Us</a></li>
+      </ul>
     </nav>
-
-    <a href="work-with-us.html" class="cta-button">
-      Book a working session
-    </a>
+    <a class="cta" href="#">Book a working session</a>
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
 <section class="hero">
-  <div class="hero-inner">
-
-    <span class="hero-eyebrow">PRICING</span>
-
-    <h1 class="hero-title">
-      Pricing enforces order.
-    </h1>
-
-    <p class="hero-subtitle">
-      Forge GTM is a sequenced decision system. You don’t buy pieces out of order.
-      Pricing exists to prevent execution on false assumptions.
-    </p>
-
-    <p class="hero-supporting">
-      Engagements proceed only after upstream gates are satisfied.
-    </p>
-
-  </div>
+  <div class="kicker">PRICING</div>
+  <h1>Pricing enforces order.</h1>
+  <p>
+    Forge GTM is a sequenced decision system. You don’t buy pieces out of order.
+    Pricing exists to prevent execution on false assumptions.
+  </p>
 </section>
 
-<!-- ================= PRICING CARDS ================= -->
-<section class="pricing-section">
-  <div class="container">
-
-    <div class="pricing-grid">
-
-      <div class="pricing-card">
-        <h3>SignalGate</h3>
-        <span class="price">$1,000</span>
-        <ul>
-          <li>Account admissibility: PURSUE or PASS</li>
-          <li>Publicly observable signals only</li>
-          <li>Explicit knowns and unknowns</li>
-          <li>No strategy. No recommendations.</li>
-        </ul>
+<section class="section">
+  <div class="cards">
+    <div class="card">
+      <h3>SignalGate</h3>
+      <div class="price">$1,000</div>
+      <ul>
+        <li>Binary account admissibility: PURSUE or PASS</li>
+        <li>Publicly observable signals only</li>
+        <li>Explicit knowns and unknowns</li>
+        <li>No strategy or recommendations</li>
+      </ul>
+      <div class="note">
+        If PASS, the engagement ends cleanly.
       </div>
-
-      <div class="pricing-card featured">
-        <h3>Module One</h3>
-        <span class="price">$3,500</span>
-        <ul>
-          <li>Operational reality mapping</li>
-          <li>Leadership authority & psychology</li>
-          <li>Constraints, leakage, risk zones</li>
-          <li>Cannot be skipped</li>
-        </ul>
-      </div>
-
-      <div class="pricing-card">
-        <h3>RSO</h3>
-        <span class="price">$2,500</span>
-        <ul>
-          <li>Execution artifact only</li>
-          <li>Externalizes verified understanding</li>
-          <li>Not sold independently</li>
-          <li>Produced after Module One</li>
-        </ul>
-      </div>
-
     </div>
 
+    <div class="card highlight">
+      <h3>Module One</h3>
+      <div class="price">$3,500</div>
+      <ul>
+        <li>Operational reality & constraint mapping</li>
+        <li>Leadership psychology & authority</li>
+        <li>Leakage points, margins, non-negotiables</li>
+        <li>Cannot be skipped</li>
+      </ul>
+      <div class="note">
+        This is intentionally the most demanding stage.
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Recommended Solution Overview (RSO)</h3>
+      <div class="price">$2,500</div>
+      <ul>
+        <li>Execution artifact only</li>
+        <li>Externalizes verified understanding</li>
+        <li>No discovery or validation</li>
+        <li>Produced only after Module One</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer">
-  <div class="container">
-    <p>© 2025 Forge GTM. All rights reserved.</p>
-  </div>
+<footer>
+  © 2025 Forge GTM. All rights reserved.
 </footer>
 
 </body>
