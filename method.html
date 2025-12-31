@@ -2,24 +2,19 @@
 <html lang="en">
 <head>
   <base href="/FORGE-GTM/">
+
+  <!-- FAVICONS (MATCH INDEX) -->
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="forge-favicon-48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png" />
   <link rel="apple-touch-icon" href="forge-favicon-180.png">
 
   <meta charset="utf-8" />
   <title>Forge GTM — The Forge Method</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="description" content="A GTM operating architecture built to hold under pressure — clean signal, disciplined outbound, and leadership guardrails.">
-  <meta property="og:title" content="Forge GTM — The Forge Method">
-  <meta property="og:description" content="A GTM method built to hold under pressure — not just in workshops.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://donggie-oss.github.io/FORGE-GTM/method.html">
-  <meta property="og:image" content="https://donggie-oss.github.io/FORGE-GTM/assets/forge-share.png">
+  <!-- SEO -->
+  <meta name="description" content="A sequenced GTM decision system designed to hold under real-world pressure — SignalGate, Module One, and RSOs in strict order.">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -28,128 +23,160 @@
   </style>
 </head>
 
-<body class="bg-slate-950 text-slate-50 antialiased font-sans">
-  <div class="min-h-screen flex flex-col">
+<body class="bg-slate-950 text-slate-50 antialiased">
+<div class="min-h-screen flex flex-col">
 
-    <!-- HEADER -->
-    <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
-      <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
-        <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
-          <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
-            FORGE <span class="text-amber-400">GTM</span>
-          </div>
-        </a>
-
-        <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
-          <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
-          <a href="signalgate.html" class="text-slate-300 hover:text-amber-300">SignalGate</a>
-          <a href="method.html" class="text-amber-400 font-semibold">Method</a>
-          <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
-          <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
-          <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
-        </nav>
-
-        <div class="hidden md:flex min-w-[180px] justify-end">
-          <a href="work-with-us.html"
-             class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
-            Book a working session
-          </a>
+  <!-- ========================= -->
+  <!-- HEADER (INLINE, STABLE)   -->
+  <!-- ========================= -->
+  <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
+        <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
+          FORGE <span class="text-amber-400">GTM</span>
         </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+        <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
+        <a href="signalgate.html" class="text-slate-300 hover:text-amber-300">SignalGate</a>
+        <a href="method.html" class="text-amber-400 font-semibold">Method</a>
+        <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
+        <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
+        <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
+      </nav>
+
+      <div class="hidden md:flex min-w-[180px] justify-end">
+        <a href="work-with-us.html"
+           class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
+          Book a working session
+        </a>
       </div>
-    </header>
+
+      <!-- MOBILE MENU -->
+      <button type="button"
+        class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
+        onclick="document.getElementById('mobile-nav').classList.toggle('hidden')">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
+      <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
+        <a href="index.html">Home</a>
+        <a href="signalgate.html">SignalGate</a>
+        <a href="method.html" class="text-amber-400 font-semibold">Method</a>
+        <a href="systems.html">Systems</a>
+        <a href="about.html">About Don</a>
+        <a href="work-with-us.html">Work With Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================= -->
+  <!-- MAIN CONTENT              -->
+  <!-- ========================= -->
+  <main class="flex-1">
 
     <!-- HERO -->
-    <main class="flex-1">
-      <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900">
-        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-          <p class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300">The Forge Method</p>
-          <h1 class="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">
-            A GTM architecture built to hold under pressure.
-          </h1>
-          <p class="mt-4 max-w-2xl text-base text-slate-300 leading-relaxed">
-            The Forge Method describes the operating systems behind SignalGate, RSOs, outbound execution,
-            and leadership decision-making. These systems are not sold as a bundle.
-          </p>
-        </div>
-      </section>
-
-      <!-- MODULES -->
-      <section class="border-b border-slate-800 bg-slate-950">
-        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-
-          <p class="text-xs text-slate-400 mb-6 max-w-3xl">
-            These systems exist independently. Engagements begin and end based on signal — not progression.
-          </p>
-
-          <div class="grid gap-8 md:grid-cols-3 text-sm">
-
-            <!-- MODULE 1 -->
-            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6 flex flex-col">
-              <p class="text-xs font-semibold tracking-[0.18em] uppercase text-slate-400">Module 1</p>
-              <h2 class="mt-2 text-lg font-semibold">Unified GTM & Fringe Diagnostic</h2>
-              <p class="mt-3 text-slate-300 leading-relaxed">
-                We map how revenue is actually created and lost across lanes — including the fringe where deals,
-                people, and signals quietly decay.
-              </p>
-              <ul class="mt-4 space-y-2 text-slate-300">
-                <li>• Leadership psychology & decision map</li>
-                <li>• Tech stack, leakage points, and shadow tools</li>
-                <li>• Margin pools, risk zones, and non-negotiables</li>
-                <li>• Hidden “no-fail” dependencies surfaced for review</li>
-              </ul>
-              <p class="mt-4 text-xs text-slate-400">
-                SignalGate is a separate, per-account validation used to decide whether deeper diagnostic work is warranted.
-              </p>
-            </div>
-
-            <!-- MODULE 2 -->
-            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6 flex flex-col">
-              <p class="text-xs font-semibold tracking-[0.18em] uppercase text-slate-400">Module 2</p>
-              <h2 class="mt-2 text-lg font-semibold">RSO Engine</h2>
-              <p class="mt-3 text-slate-300 leading-relaxed">
-                Account-specific Recommended Solution Overviews are produced selectively for accounts
-                that justify deeper investment.
-              </p>
-              <ul class="mt-4 space-y-2 text-slate-300">
-                <li>• Evidence-backed, operator-grade narratives</li>
-                <li>• Consistent structure for emails, meetings, and boards</li>
-                <li>• Risk, scenario, and trade-off framing</li>
-                <li>• No-ERP / no-buzzword language rules</li>
-              </ul>
-            </div>
-
-            <!-- MODULE 3 -->
-            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6 flex flex-col">
-              <p class="text-xs font-semibold tracking-[0.18em] uppercase text-slate-400">Module 3</p>
-              <h2 class="mt-2 text-lg font-semibold">Outbound Engine: Build • Operate • Transfer</h2>
-              <p class="mt-3 text-slate-300 leading-relaxed">
-                We build the outbound motion, operate it under pressure, then transfer a proven engine
-                your team can own without constant heroics.
-              </p>
-              <ul class="mt-4 space-y-2 text-slate-300">
-                <li>• Outreach-ready account lists & named humans</li>
-                <li>• Email, DM, and penetration doctrine per lane</li>
-                <li>• Weekly operating rhythm & scoreboards</li>
-                <li>• Transfer plan so the engine survives after exit</li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="border-t border-slate-800 bg-slate-950">
-      <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
-        © <span id="year"></span> FORGE GTM. All rights reserved.
+    <section class="border-b border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900">
+      <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-14">
+        <p class="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300">
+          The Forge Method
+        </p>
+        <h1 class="mt-4 text-3xl sm:text-4xl font-semibold tracking-tight">
+          A GTM system built to hold under pressure — not just in workshops.
+        </h1>
+        <p class="mt-6 max-w-2xl text-base text-slate-300">
+          Forge GTM is not a menu of services.
+          It is a sequenced decision system designed to prevent false confidence before execution begins.
+        </p>
       </div>
-    </footer>
+    </section>
 
-  </div>
+    <!-- METHOD BODY -->
+    <section class="bg-slate-950 border-b border-slate-800">
+      <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-14">
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+        <p class="max-w-3xl text-base text-slate-300">
+          Every downstream action is constrained by what is learned upstream.
+          The method enforces order — and rejects anything that violates it.
+        </p>
+
+        <div class="mt-12 grid gap-8 md:grid-cols-3 text-sm">
+
+          <!-- SIGNALGATE -->
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold text-slate-50">SignalGate</h3>
+            <p class="mt-3 text-slate-300">
+              SignalGate exists to answer one question before momentum sets in:
+            </p>
+            <p class="mt-2 font-semibold text-slate-100">
+              Is this account rational to pursue at all?
+            </p>
+            <p class="mt-3 text-slate-300">
+              It evaluates publicly observable signals and returns a clear PURSUE or PASS.
+              No strategy. No narrative. No next steps.
+            </p>
+          </div>
+
+          <!-- MODULE ONE -->
+          <div class="rounded-2xl border border-amber-400/60 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold text-slate-50">
+              Module One (Required Gate)
+            </h3>
+            <p class="mt-3 text-slate-300">
+              Module One establishes operational reality before commitment is allowed.
+            </p>
+            <ul class="mt-3 space-y-1.5 text-slate-300">
+              <li>• Leadership psychology and decision authority</li>
+              <li>• Operational constraints and leakage points</li>
+              <li>• Margin pools, risk zones, and non-negotiables</li>
+              <li>• Explicit unknowns that cannot be ignored</li>
+            </ul>
+            <p class="mt-4 text-slate-300">
+              Module One cannot be skipped.
+            </p>
+          </div>
+
+          <!-- RSO -->
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold text-slate-50">
+              Recommended Solution Overviews (RSOs)
+            </h3>
+            <p class="mt-3 text-slate-300">
+              RSOs are downstream execution artifacts produced only after Module One.
+            </p>
+            <p class="mt-3 text-slate-300">
+              They externalize verified understanding to earn attention and advance execution.
+            </p>
+            <p class="mt-3 text-slate-300">
+              Any RSO produced without Module One would be invalid by definition.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================= -->
+  <!-- FOOTER (INLINE, STABLE)   -->
+  <!-- ========================= -->
+  <footer class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
+      © <span id="year"></span> FORGE GTM. All rights reserved.
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
