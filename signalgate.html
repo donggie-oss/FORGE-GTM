@@ -23,7 +23,7 @@
 <body class="bg-slate-950 text-slate-50 antialiased">
 <div class="min-h-screen flex flex-col">
 
-<!-- HEADER (UNCHANGED) -->
+<!-- HEADER -->
 <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
   <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
     <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
@@ -55,71 +55,136 @@
 <!-- MAIN -->
 <main class="flex-1">
 
-<!-- HERO (ASSERTIVE, NOT MARKETING) -->
-<section class="border-b border-slate-800">
-  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-20">
-    <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
-      SignalGate
-    </h1>
+<!-- HERO -->
+<section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800">
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-    <p class="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
-      SignalGate enforces account admissibility before execution begins.
-    </p>
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-[0.30em] text-amber-300">
+        GATE 1 — ACCOUNT ADMISSIBILITY
+      </p>
 
-    <p class="mt-4 text-sm text-slate-400 max-w-2xl">
-      Public signals only. Binary outcome. Fail-closed by default.
-    </p>
+      <h1 class="mt-6 text-4xl sm:text-5xl font-bold leading-tight">
+        SignalGate
+      </h1>
+
+      <p class="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl">
+        SignalGate enforces account admissibility before execution begins.
+        It answers one question only: <span class="text-slate-50 font-semibold">is this account rational to pursue?</span>
+      </p>
+
+      <p class="mt-4 text-sm text-slate-400">
+        Public signals only. Binary outcome. Fail-closed by default.
+      </p>
+    </div>
+
+    <div class="flex justify-center md:justify-end">
+      <img src="Transparent Shard.png"
+           alt="SignalGate Shard"
+           class="w-28 h-auto opacity-90">
+    </div>
+
   </div>
 </section>
 
-<!-- GATE INSERT (PRIMARY ENFORCEMENT MOMENT) -->
-<section class="bg-slate-950 py-20 border-b border-slate-800">
-  <div class="flex justify-center">
-    <img src="assets/signalgate-shard-transparent.png"
-         alt="SignalGate Admissibility Gate"
-         class="w-36 h-auto" />
-  </div>
-</section>
-
-<!-- DEFINITION -->
+<!-- WHAT IT IS -->
 <section class="bg-slate-950 py-16 border-b border-slate-800">
-  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 max-w-3xl">
-    <h2 class="text-lg font-semibold mb-6">What SignalGate Is</h2>
-    <ul class="text-sm space-y-3 text-slate-300">
-      <li>• Binary admissibility decision: <strong>PURSUE</strong> or <strong>PASS</strong></li>
-      <li>• Publicly observable evidence only</li>
-      <li>• Explicit recording of knowns, unknowns, contradictions</li>
-      <li>• Independent of access, persuasion, or execution quality</li>
-    </ul>
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
+    <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-10 shadow-xl">
+
+      <h2 class="text-xl font-semibold mb-6">What SignalGate Is</h2>
+
+      <ul class="text-sm text-slate-300 space-y-3">
+        <li>• Binary admissibility decision: <span class="text-slate-50 font-semibold">PURSUE or PASS</span></li>
+        <li>• Publicly observable evidence only</li>
+        <li>• Explicit recording of knowns, unknowns, and contradictions</li>
+        <li>• Independent of access, persuasion, or execution quality</li>
+      </ul>
+
+    </div>
   </div>
 </section>
 
-<!-- OUTPUT (COLD, NON-DRAMATIC) -->
+<!-- WHAT IT IS NOT -->
 <section class="bg-slate-950 py-16 border-b border-slate-800">
-  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 max-w-3xl">
-    <h2 class="text-lg font-semibold mb-6">SignalGate Output</h2>
-    <p class="text-sm text-slate-300 leading-relaxed">
-      SignalGate returns a single verdict.
-      Ambiguity defaults to <strong>PASS</strong>.
-      No intermediate states exist.
-    </p>
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
+    <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-10 shadow-xl">
+
+      <h2 class="text-xl font-semibold mb-6">What SignalGate Is Not</h2>
+
+      <ul class="text-sm text-slate-300 space-y-3">
+        <li>• No strategy</li>
+        <li>• No recommendations</li>
+        <li>• No execution guidance</li>
+        <li>• No sales narrative</li>
+        <li>• No intermediate states or follow-ups</li>
+      </ul>
+
+    </div>
   </div>
 </section>
 
-<!-- COMMERCIAL TERMS -->
+<!-- OUTPUT -->
 <section class="bg-slate-950 py-16 border-b border-slate-800">
-  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 max-w-3xl">
-    <h2 class="text-lg font-semibold mb-6">Commercial Terms</h2>
-    <p class="text-sm text-slate-300">
-      <strong>SignalGate — $1,000</strong><br/>
-      Pre-engagement only. Public signals only. Company name as sole input.
-    </p>
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
+    <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-10 shadow-xl text-center">
+
+      <h2 class="text-xl font-semibold mb-8">SignalGate Output</h2>
+
+      <div class="flex justify-center gap-6 mb-6">
+        <div class="rounded-xl border-2 border-emerald-500/50 bg-emerald-500/10 px-10 py-4 text-xl font-bold text-emerald-400">
+          PURSUE
+        </div>
+        <div class="rounded-xl border-2 border-rose-500/50 bg-rose-500/10 px-10 py-4 text-xl font-bold text-rose-400">
+          PASS
+        </div>
+      </div>
+
+      <p class="text-sm text-slate-400 max-w-xl mx-auto">
+        No intermediate states. Ambiguity defaults to <span class="text-slate-50 font-semibold">PASS</span>.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMMERCIAL -->
+<section class="bg-slate-950 py-16">
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
+    <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-10 shadow-xl">
+
+      <h2 class="text-xl font-semibold mb-4">Commercial Terms</h2>
+
+      <p class="text-sm text-slate-300">
+        <span class="text-slate-50 font-semibold">SignalGate — $1,000</span><br>
+        Pre-engagement only. Public signals only. Company name as sole input.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-slate-950 py-16 border-t border-slate-800">
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
+    <div class="rounded-2xl bg-slate-900/40 border border-slate-700 p-8 text-center">
+      <div class="flex justify-center gap-4">
+        <a href="pricing.html"
+           class="inline-flex items-center rounded-full bg-amber-400 px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-amber-300 transition-colors">
+          See pricing
+        </a>
+        <a href="work-with-us.html"
+           class="inline-flex items-center rounded-full border border-slate-600 px-8 py-4 text-sm font-semibold text-slate-100 hover:bg-slate-800 transition-colors">
+          Start with SignalGate
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
 </main>
 
-<!-- FOOTER (UNCHANGED) -->
+<!-- FOOTER -->
 <footer class="border-t border-slate-800 bg-slate-950">
   <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
     © <span id="year"></span> FORGE GTM. All rights reserved.
