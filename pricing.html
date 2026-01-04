@@ -49,36 +49,13 @@
             Book a working session
           </a>
         </div>
-
-        <!-- MOBILE MENU -->
-        <button type="button"
-          class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
-          aria-controls="mobile-nav" aria-expanded="false"
-          onclick="const m=document.getElementById('mobile-nav'); const btn=this; m.classList.toggle('hidden'); btn.setAttribute('aria-expanded', m.classList.contains('hidden') ? 'false' : 'true');">
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
-
-      <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
-        <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
-          <a href="index.html">Home</a>
-          <a href="signalgate.html">SignalGate</a>
-          <a href="method.html">Method</a>
-          <a href="pricing.html" class="text-amber-400 font-semibold">Pricing</a>
-          <a href="rso.html">RSO</a>
-          <a href="systems.html">Systems</a>
-          <a href="about.html">About Don</a>
-          <a href="work-with-us.html">Work With Us</a>
-        </nav>
       </div>
     </header>
 
     <!-- MAIN -->
     <main class="flex-1">
 
-      <!-- HERO (MATCH METHOD) -->
+      <!-- HERO -->
       <section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800">
         <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-20">
           <p class="text-xs font-semibold uppercase tracking-[0.30em] text-amber-300">
@@ -108,69 +85,37 @@
           <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-8 shadow-xl">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-sm">
 
-              <!-- SignalGate -->
               <div class="rounded-xl border border-slate-700 bg-slate-800/40 p-6">
-                <div class="text-lg font-semibold text-slate-50">SignalGate</div>
+                <div class="text-lg font-semibold">SignalGate</div>
                 <div class="mt-1 text-sm text-slate-400">Account admissibility</div>
-
                 <div class="mt-4 text-2xl font-bold text-amber-300">$1,000</div>
-
                 <ul class="mt-5 space-y-2 text-slate-300">
-                  <li>• Evaluates publicly observable signals</li>
-                  <li>• Records evidence and explicit unknowns</li>
-                  <li>• Returns a clear PURSUE or PASS</li>
+                  <li>• Public signals only</li>
+                  <li>• Explicit evidence + unknowns</li>
+                  <li>• Binary PURSUE or PASS</li>
                 </ul>
-
-                <!-- ONLY ADDITION: SignalGate shard (canon filename) -->
-                <div class="mt-6 flex justify-center">
-                  <img
-                    src="signalgate-shard-transparent.png"
-                    alt="SignalGate shard"
-                    class="w-[500px] h-auto opacity-95"
-                  />
-                </div>
-
-                <p class="mt-5 text-xs text-slate-400 leading-relaxed">
+                <p class="mt-5 text-xs text-slate-400">
                   No strategy. No recommendations. No credit toward other work.
-                  If PASS, the engagement ends cleanly.
                 </p>
               </div>
 
-              <!-- Module One (highlight) -->
-              <div class="rounded-xl border border-amber-400/50 bg-slate-800/40 p-6 shadow-[0_0_0_1px_rgba(251,191,36,0.25)]">
-                <div class="text-lg font-semibold text-slate-50">Module One</div>
+              <div class="rounded-xl border border-amber-400/50 bg-slate-800/40 p-6">
+                <div class="text-lg font-semibold">Module One</div>
                 <div class="mt-1 text-sm text-slate-400">Required operational gate</div>
-
                 <div class="mt-4 text-2xl font-bold text-amber-300">$3,500</div>
-
                 <ul class="mt-5 space-y-2 text-slate-300">
-                  <li>• Leadership psychology &amp; decision authority</li>
-                  <li>• Operational constraints and leakage points</li>
-                  <li>• Margin pools, risk zones, non-negotiables</li>
-                  <li>• Explicit unknowns surfaced and recorded</li>
+                  <li>• Authority & psychology</li>
+                  <li>• Constraints & leakage</li>
+                  <li>• Explicit unknowns</li>
                 </ul>
-
-                <p class="mt-5 text-xs text-slate-400 leading-relaxed">
-                  This stage cannot be skipped. It carries real accountability and is
-                  intentionally the most demanding engagement.
-                </p>
               </div>
 
-              <!-- RSO -->
               <div class="rounded-xl border border-slate-700 bg-slate-800/40 p-6">
-                <div class="text-lg font-semibold text-slate-50">Recommended Solution Overview (RSO)</div>
+                <div class="text-lg font-semibold">RSO</div>
                 <div class="mt-1 text-sm text-slate-400">Execution artifact</div>
-
-                <div class="mt-4 text-2xl font-bold text-slate-200">$2,500</div>
-
-                <ul class="mt-5 space-y-2 text-slate-300">
-                  <li>• Externalizes verified understanding</li>
-                  <li>• Operator-grade, evidence-led narrative</li>
-                  <li>• Designed for execution, not discovery</li>
-                </ul>
-
-                <p class="mt-5 text-xs text-slate-400 leading-relaxed">
-                  RSOs are available only after Module One. They are not sold independently.
+                <div class="mt-4 text-2xl font-bold">$2,500</div>
+                <p class="mt-5 text-xs text-slate-400">
+                  Available only after Module One.
                 </p>
               </div>
 
@@ -179,57 +124,48 @@
         </div>
       </section>
 
-      <!-- ASSURANCE (LOW-KEY POLICY REFERENCE) -->
+      <!-- ASSURANCE / CONTROLLED REFERRAL DOCTRINE -->
       <section class="bg-slate-950 py-14 border-b border-slate-800">
         <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
           <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-8 shadow-xl">
-            
+            <h2 class="text-lg font-semibold mb-3">Assurance & Referral Credit Policy</h2>
+
+            <p class="text-sm text-slate-300 max-w-3xl leading-relaxed">
+              SignalGate operates on a fail-closed basis. If SignalGate returns
+              <span class="font-semibold text-slate-50">PASS</span> and you proceed anyway,
+              and the engagement closes successfully within
+              <span class="font-semibold text-slate-50">12 months</span>
+              (same scope, same buying center, no material facts withheld),
+              you receive credits for
+              <span class="font-semibold text-slate-50">1 SignalGate</span>,
+              <span class="font-semibold text-slate-50">1 Module One</span>, and
+              <span class="font-semibold text-slate-50">1 RSO</span>
+              on a future account of your choosing.
+            </p>
+
+            <p class="mt-3 text-xs text-slate-400">
+              Credits are not cash, non-transferable, and issued only after a paid engagement.
+              Referral incentives are issued as service credits, not commissions.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- WHY YOU CAN'T BUY RSO -->
-      <section class="bg-slate-950 py-14 border-b border-slate-800">
+      <!-- WHY YOU CAN’T BUY RSO -->
+      <section class="bg-slate-950 py-14">
         <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
           <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-8 shadow-xl">
             <h2 class="text-lg font-semibold mb-4">Why you can’t buy an RSO yet</h2>
-
             <p class="text-sm text-slate-300 max-w-3xl">
-              Most GTM failures don’t come from poor execution. They come from confident execution
-              on false assumptions. An RSO is not a discovery product — it is the externalized
-              output of verified understanding.
+              The sequence is the product: SignalGate → Module One → RSO.
+              Pricing exists to enforce that order.
             </p>
-
-            <p class="mt-4 text-sm text-slate-300 max-w-3xl">
-              The sequence is the product: SignalGate → Module One → RSO. Pricing exists to
-              enforce that order.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <section class="bg-slate-950 py-14">
-        <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
-          <div class="rounded-2xl bg-slate-900/40 border border-slate-700 p-8 text-center">
-            <div class="flex flex-wrap justify-center gap-4">
-              <a href="signalgate.html"
-                 class="inline-flex items-center rounded-full border border-slate-600 px-8 py-4 text-sm font-semibold text-slate-100 hover:bg-slate-800 transition-colors">
-                Start with SignalGate
-              </a>
-
-              <a href="work-with-us.html"
-                 class="inline-flex items-center rounded-full bg-amber-400 px-8 py-4 text-sm font-semibold text-slate-950 shadow-md hover:bg-amber-300 transition-colors">
-                Book a working session
-              </a>
-            </div>
           </div>
         </div>
       </section>
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="border-t border-slate-800 bg-slate-950">
       <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
         © <span id="year"></span> FORGE GTM. All rights reserved.
@@ -243,3 +179,4 @@
   </script>
 </body>
 </html>
+
