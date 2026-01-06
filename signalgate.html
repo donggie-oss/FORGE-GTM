@@ -3,17 +3,12 @@
 <head>
   <base href="/FORGE-GTM/">
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="forge-favicon-48.png">
-  <link rel="apple-touch-icon" href="forge-favicon-180.png">
-
   <meta charset="utf-8" />
   <title>SignalGate — Forge GTM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     .forge-container { max-width: 1120px; }
     html { overflow-y: scroll; }
@@ -25,14 +20,12 @@
 
 <!-- HEADER -->
 <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
-  <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
-    <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
-      <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
-        FORGE <span class="text-amber-400">GTM</span>
-      </div>
-    </a>
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
+    <div class="text-lg font-semibold tracking-[0.16em] uppercase">
+      FORGE <span class="text-amber-400">GTM</span>
+    </div>
 
-    <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+    <nav class="hidden md:flex gap-7 text-sm font-medium">
       <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
       <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
       <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
@@ -43,64 +36,61 @@
       <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
     </nav>
 
-    <div class="hidden md:flex min-w-[180px] justify-end">
-      <a href="work-with-us.html"
-         class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
-        Book a working session
-      </a>
-    </div>
+    <a href="work-with-us.html"
+       class="hidden md:inline-flex rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 hover:bg-amber-300">
+      Book a working session
+    </a>
   </div>
 </header>
 
-<!-- MAIN -->
-<main class="flex-1">
-
 <!-- HERO -->
 <section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800">
-  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-20 relative">
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-24">
 
-    <!-- TEXT -->
-    <div class="max-w-3xl relative z-10">
-      <p class="text-xs font-semibold uppercase tracking-[0.30em] text-amber-300">
-        Gate 1 — Account Admissibility
-      </p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-      <h1 class="mt-6 text-4xl sm:text-5xl font-bold leading-tight">
-        SignalGate
-      </h1>
+      <!-- TEXT -->
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.30em] text-amber-300">
+          Gate 1 — Account Admissibility
+        </p>
 
-      <p class="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed">
-        SignalGate enforces account admissibility before execution begins.
-        It answers one question only:
-        <span class="text-slate-50 font-semibold">
-          is this account rational to pursue?
-        </span>
-      </p>
+        <h1 class="mt-6 text-4xl sm:text-5xl font-bold">
+          SignalGate
+        </h1>
 
-      <p class="mt-4 text-sm text-slate-400">
-        Public signals only. Binary outcome. Fail-closed by default.
-      </p>
+        <p class="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed">
+          SignalGate enforces account admissibility before execution begins.
+          It answers one question only:
+          <span class="text-slate-50 font-semibold">
+            is this account rational to pursue?
+          </span>
+        </p>
+
+        <p class="mt-4 text-sm text-slate-400">
+          Public signals only. Binary outcome. Fail-closed by default.
+        </p>
+      </div>
+
+      <!-- SHARD -->
+      <div class="flex justify-center lg:justify-end">
+        <img
+          src="signalgate-shard-transparent.png"
+          alt=""
+          aria-hidden="true"
+          class="w-[360px] opacity-90"
+        />
+      </div>
+
     </div>
-
-    <!-- SHARD -->
-    <img
-      src="signalgate-shard-transparent.png"
-      alt=""
-      aria-hidden="true"
-      class="pointer-events-none absolute
-             right-[90px]
-             top-1/2 -translate-y-1/2
-             w-[480px]
-             opacity-95"
-    />
 
   </div>
 </section>
 
 <!-- WHAT IT IS -->
-<section class="bg-slate-950 py-14 border-b border-slate-800">
+<section class="bg-slate-950 py-16 border-b border-slate-800">
   <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
-    <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-10 max-w-3xl">
+    <div class="max-w-3xl rounded-2xl bg-slate-900/60 border border-slate-700 p-10">
       <h2 class="text-lg font-semibold mb-4">What SignalGate Is</h2>
       <ul class="text-sm space-y-3 text-slate-300">
         <li>• Binary admissibility decision: <span class="text-slate-50 font-semibold">PURSUE or PASS</span></li>
@@ -112,18 +102,12 @@
   </div>
 </section>
 
-</main>
-
 <footer class="border-t border-slate-800 bg-slate-950">
   <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
-    © <span id="year"></span> FORGE GTM. All rights reserved.
+    © 2026 FORGE GTM. All rights reserved.
   </div>
 </footer>
 
 </div>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
