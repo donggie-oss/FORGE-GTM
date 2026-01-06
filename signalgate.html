@@ -3,17 +3,18 @@
 <head>
   <base href="/FORGE-GTM/">
 
+  <meta charset="utf-8" />
+  <title>SignalGate — Forge GTM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png">
   <link rel="icon" type="image/png" sizes="48x48" href="forge-favicon-48.png">
   <link rel="apple-touch-icon" href="forge-favicon-180.png">
 
-  <meta charset="utf-8" />
-  <title>SignalGate — Forge GTM</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     .forge-container { max-width: 1120px; }
     html { overflow-y: scroll; }
@@ -25,7 +26,7 @@
 
 <!-- HEADER -->
 <header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
-  <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
     <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
       <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
         FORGE <span class="text-amber-400">GTM</span>
@@ -49,27 +50,6 @@
         Book a working session
       </a>
     </div>
-
-    <button type="button"
-      class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
-      onclick="const m=document.getElementById('mobile-nav');m.classList.toggle('hidden');">
-      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-  </div>
-
-  <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
-    <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
-      <a href="index.html">Home</a>
-      <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
-      <a href="method.html">Method</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="rso.html">RSO</a>
-      <a href="systems.html">Systems</a>
-      <a href="about.html">About Don</a>
-      <a href="work-with-us.html">Work With Us</a>
-    </nav>
   </div>
 </header>
 
@@ -77,11 +57,11 @@
 <main class="flex-1">
 
 <!-- HERO -->
-<section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800 overflow-hidden">
+<section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800">
   <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-20 relative">
 
-    <!-- TEXT BLOCK (CANONICAL HERO WIDTH + CLEARANCE) -->
-    <div class="mx-auto max-w-3xl relative z-10 pr-32">
+    <!-- TEXT -->
+    <div class="max-w-3xl">
       <p class="text-xs font-semibold uppercase tracking-[0.30em] text-amber-300">
         Gate 1 — Account Admissibility
       </p>
@@ -103,14 +83,13 @@
       </p>
     </div>
 
-    <!-- SHARD (FIXED POSITION, NON-COLLIDING) -->
+    <!-- SHARD -->
     <img
       src="signalgate-shard-transparent.png"
       alt=""
       aria-hidden="true"
-      class="pointer-events-none absolute right-[140px] top-1/2 -translate-y-1/2 w-[420px] opacity-90"
+      class="pointer-events-none absolute right-[120px] top-1/2 -translate-y-1/2 w-[420px] opacity-98"
     />
-
   </div>
 </section>
 
@@ -146,22 +125,6 @@
     <p class="text-sm text-slate-400 max-w-xl mx-auto">
       No intermediate states. Ambiguity defaults to <span class="text-slate-50 font-semibold">PASS</span>.
     </p>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="bg-slate-950 py-14">
-  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 text-center">
-    <div class="flex justify-center gap-4">
-      <a href="pricing.html"
-         class="inline-flex items-center rounded-full bg-amber-400 px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-amber-300">
-        See pricing
-      </a>
-      <a href="work-with-us.html"
-         class="inline-flex items-center rounded-full border border-slate-600 px-8 py-4 text-sm font-semibold text-slate-100 hover:bg-slate-800">
-        Start with SignalGate
-      </a>
-    </div>
   </div>
 </section>
 
