@@ -3,78 +3,122 @@
 <head>
   <base href="/FORGE-GTM/">
 
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="forge-favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="forge-favicon-16.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="forge-favicon-48.png">
+  <link rel="apple-touch-icon" href="forge-favicon-180.png">
+
   <meta charset="utf-8" />
   <title>SignalGate — Forge GTM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     .forge-container { max-width: 1120px; }
+    html { overflow-y: scroll; }
   </style>
 </head>
 
 <body class="bg-slate-950 text-slate-50 antialiased">
+<div class="min-h-screen flex flex-col">
 
 <!-- HEADER -->
-<header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
-  <div class="mx-auto forge-container px-6 flex h-16 items-center justify-between">
-    <div class="text-lg font-semibold tracking-[0.16em] uppercase">
-      FORGE <span class="text-amber-400">GTM</span>
+<header class="border-b border-slate-800/70 bg-slate-950/90 backdrop-blur">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8 forge-container flex h-16 items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 min-w-[140px]">
+      <div class="text-lg font-semibold tracking-[0.16em] uppercase text-slate-50">
+        FORGE <span class="text-amber-400">GTM</span>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+      <a href="index.html" class="text-slate-300 hover:text-amber-300">Home</a>
+      <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
+      <a href="method.html" class="text-slate-300 hover:text-amber-300">Method</a>
+      <a href="pricing.html" class="text-slate-300 hover:text-amber-300">Pricing</a>
+      <a href="rso.html" class="text-slate-300 hover:text-amber-300">RSO</a>
+      <a href="systems.html" class="text-slate-300 hover:text-amber-300">Systems</a>
+      <a href="about.html" class="text-slate-300 hover:text-amber-300">About Don</a>
+      <a href="work-with-us.html" class="text-slate-300 hover:text-amber-300">Work With Us</a>
+    </nav>
+
+    <div class="hidden md:flex min-w-[180px] justify-end">
+      <a href="work-with-us.html"
+         class="inline-flex items-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg hover:bg-amber-300 transition-colors">
+        Book a working session
+      </a>
     </div>
+
+    <button type="button"
+      class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-slate-800"
+      onclick="const m=document.getElementById('mobile-nav');m.classList.toggle('hidden');">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobile-nav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
+    <nav class="mx-auto forge-container px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-200">
+      <a href="index.html">Home</a>
+      <a href="signalgate.html" class="text-amber-400 font-semibold">SignalGate</a>
+      <a href="method.html">Method</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="rso.html">RSO</a>
+      <a href="systems.html">Systems</a>
+      <a href="about.html">About Don</a>
+      <a href="work-with-us.html">Work With Us</a>
+    </nav>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- MAIN -->
+<main class="flex-1">
+
 <!-- HERO -->
 <section class="bg-gradient-to-b from-slate-950 to-slate-900 border-b border-slate-800">
-  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-20">
-    
-    <!-- TWO-COLUMN GRID: TEXT | DECOR -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-      <!-- LEFT: TEXT (MATCHES METHOD WIDTH FEEL) -->
-      <div class="max-w-xl">
-        <p class="text-xs font-semibold uppercase tracking-[0.30em] text-amber-300">
-          Gate 1 — Account Admissibility
-        </p>
+    <!-- LEFT (ONLY FIX IS max-w-3xl) -->
+    <div class="max-w-3xl">
+      <p class="text-xs font-semibold uppercase tracking-[0.30em] text-amber-300">
+        Gate 1 — Account Admissibility
+      </p>
 
-        <h1 class="mt-4 text-4xl sm:text-5xl font-bold">
-          SignalGate
-        </h1>
+      <h1 class="mt-4 text-4xl sm:text-5xl font-bold">
+        SignalGate
+      </h1>
 
-        <p class="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed">
-          SignalGate enforces account admissibility before execution begins.
-          It answers one question only:
-          <span class="text-slate-50 font-semibold">
-            is this account rational to pursue?
-          </span>
-        </p>
+      <p class="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed">
+        SignalGate enforces account admissibility before execution begins.
+        It answers one question only:
+        <span class="text-slate-50 font-semibold">
+          is this account rational to pursue?
+        </span>
+      </p>
 
-        <p class="mt-4 text-sm text-slate-400">
-          Public signals only. Binary outcome. Fail-closed by default.
-        </p>
-      </div>
+      <p class="mt-4 text-sm text-slate-400">
+        Public signals only. Binary outcome. Fail-closed by default.
+      </p>
+    </div>
 
-      <!-- RIGHT: SHARD (OWN COLUMN, NO COLLISION) -->
-      <div class="relative flex justify-center lg:justify-end">
-        <img
-          src="signalgate-shard-transparent.png"
-          alt=""
-          aria-hidden="true"
-          class="w-[480px] opacity-95"
-        />
-      </div>
-
+    <!-- RIGHT (UNCHANGED) -->
+    <div class="flex justify-center md:justify-end">
+      <img
+        src="signalgate-shard-transparent.png"
+        alt="SignalGate shard"
+        class="w-[500px] h-auto opacity-95"
+      />
     </div>
 
   </div>
 </section>
 
 <!-- WHAT IT IS -->
-<section class="bg-slate-950 py-20 border-b border-slate-800">
-  <div class="mx-auto forge-container px-6">
-    <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-10 max-w-3xl">
+<section class="bg-slate-950 py-14 border-b border-slate-800">
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8">
+    <div class="rounded-2xl bg-slate-900/60 border border-slate-700 p-10">
       <h2 class="text-lg font-semibold mb-4">What SignalGate Is</h2>
       <ul class="text-sm space-y-3 text-slate-300">
         <li>• Binary admissibility decision: <span class="text-slate-50 font-semibold">PURSUE or PASS</span></li>
@@ -86,5 +130,56 @@
   </div>
 </section>
 
+<!-- OUTPUT -->
+<section class="bg-slate-950 py-14 border-b border-slate-800">
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-lg font-semibold mb-8">SignalGate Output</h2>
+
+    <div class="flex justify-center gap-6 mb-6">
+      <div class="rounded-xl border-2 border-emerald-500/50 bg-emerald-500/10 px-10 py-5 text-xl font-bold text-emerald-400">
+        PURSUE
+      </div>
+      <div class="rounded-xl border-2 border-rose-500/50 bg-rose-500/10 px-10 py-5 text-xl font-bold text-rose-400">
+        PASS
+      </div>
+    </div>
+
+    <p class="text-sm text-slate-400 max-w-xl mx-auto">
+      No intermediate states. Ambiguity defaults to
+      <span class="text-slate-50 font-semibold">PASS</span>.
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-slate-950 py-14">
+  <div class="mx-auto forge-container px-4 sm:px-6 lg:px-8 text-center">
+    <div class="flex justify-center gap-4">
+      <a href="pricing.html"
+         class="inline-flex items-center rounded-full bg-amber-400 px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-amber-300">
+        See pricing
+      </a>
+      <a href="work-with-us.html"
+         class="inline-flex items-center rounded-full border border-slate-600 px-8 py-4 text-sm font-semibold text-slate-100 hover:bg-slate-800">
+        Start with SignalGate
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-slate-800 bg-slate-950">
+  <div class="mx-auto forge-container px-4 py-6 text-[11px] text-slate-500">
+    © <span id="year"></span> FORGE GTM. All rights reserved.
+  </div>
+</footer>
+
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
